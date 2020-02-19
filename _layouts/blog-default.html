@@ -1,0 +1,20 @@
+---
+
+---
+
+<head>
+    {% include header.html %}
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
+</head>
+
+<div class="container">
+
+    <body>
+        {% include nav.html %}
+
+        {{ content }}
+
+        {% include footer-files.html %}
+    </body>
+</div>

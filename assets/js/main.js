@@ -65,3 +65,6 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 });
+
+// Slideshow for blog homepage
+w3.slideshow(".nature", 1000);

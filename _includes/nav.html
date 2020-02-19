@@ -1,23 +1,59 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+<style>
+    .links {
+        padding: 0;
+        margin: 0;
+    }
+
+    .links ul {
+        display: inline-block;
+    }
+
+    .links ul li {
+        list-style-type: none;
+        float: left;
+        padding: 6px 15px 0 0;
+        font-size: 20px;
+    }
+
+    .links ul li a {
+        color: #2e3141;
+    }
+
+    .links ul li a:hover {
+        color: #516096;
+    }
+
+    .navbar-brand {
+        color: #2e3141 !important;
+    }
+
+    .navbar-collapse li a {
+        color: #2e3141 !important;
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="{{ site.baseurl }}/" target="_blank">{{ site.title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/blog">Home</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/blog/about" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="{{ site.baseurl }}/blog/about/contact">Contact</a>
+                    <a class="dropdown-item" href="{{ site.baseurl }}/blog/about/newsletter">Newsletter</a>
+                    <a class="dropdown-item" href="{{ site.baseurl }}/" target="_blank">My Site</a>
+                    <a class="dropdown-item" href="https://github.com/bjcarlson42" target="_blank">My Work</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -26,13 +62,33 @@
                     Languages
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Python</a>
+                    <a class="dropdown-item" href="#">HTML</a>
+                    <a class="dropdown-item" href="#">CSS</a>
+                    <a class="dropdown-item" href="#">JavaScript</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Strat Here</a>
+                <a class="nav-link" href="{{ site.baseurl }}/blog/about/start-here">Start Here</a>
             </li>
+            <div class="links">
+                <ul>
+                    <li><a href="https://twitter.com/bencarlsonblog" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.pinterest.com/benjamincarlsonblog/" target="_blank"><i
+                                class="fa fa-pinterest-p"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/bjcarlson42" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="http://github.com/bjcarlson42" target="_blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/bencarlsonblog/" target="_blank"><i
+                                class="fa fa-instagram"></i></a></li>
+                    <li><a href="mailto:benc@benjamincarlson.net" target="_blank"><i class="fa fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
         </ul>
     </div>
 </nav>
