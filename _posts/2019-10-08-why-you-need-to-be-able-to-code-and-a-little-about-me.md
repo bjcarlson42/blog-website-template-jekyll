@@ -7,6 +7,8 @@ tags: ['TODO']
 comments: true
 author: Benjamin Carlson
 description: TODO
+img: /personal-website-jekyll/assets/img/posts/about-me.jpg
+alt: About Me Img
 ---
 
 ## Introduction
