@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Coding Technology"
-date: 2019-10-25
+date: 2019-12-19
 categories: ['Data Science']
 tags: ['First Post','Internships','Python','Programming']
 comments: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Client Side Form Validation"
-date: 2019-10-25
+date: 2019-12-10
 categories: ['Data Science']
 tags: ['First Post','Internships','Python','Programming']
 comments: true
