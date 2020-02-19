@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Why You Need To Be Able To Code: And A Little About Me"
-date: 2020-02-18
+date: 2019-10-08
 categories: ['My Life']
+tags: ['TODO']
 comments: true
 author: Benjamin Carlson
 description: TODO
