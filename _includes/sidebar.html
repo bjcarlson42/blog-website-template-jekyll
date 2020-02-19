@@ -1,0 +1,14 @@
+<h4>Learn Tech The Right Way</h4>
+<p>Subscribe to be notified of new posts, coding tips and tricks, and more.</p>
+<p>Email:</p>
+<input type="text" name="" id="">
+<input type="submit" name="" id="">
+<h4>Recently In:</h4>
+<ul>
+    {% for post in site.posts limit:3 %}
+    <li>
+        <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% include under-p1-ad.html %}

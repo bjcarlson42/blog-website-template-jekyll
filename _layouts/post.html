@@ -1,60 +1,26 @@
+---
+
+---
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Meta Tags -->
-    <meta name="author" content="Benjamin Carlson">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% include header.html %}
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/post.css"> 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/img/favicon.jpg" type="image/x-icon" />
-    <!-- Global site tag (gtag.js) (Google Analytics) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150381523-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-150381523-1');
-    </script>
-    <!-- google Adsense -->
-    <script data-ad-client="ca-pub-8586017200531248" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- pinterest verify -->
-    <meta name="p:domain_verify" content="5975cbbb4817a28980bb0205d29ee71c" />
-    <!-- CSS animations github -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Poptin -->
-    <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=5748dc76e4fa5' async='true'></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
 </head>
 
 <body>
+    {% include nav.html %}
 
     <div class="container">
-        {{ content }}
+        <div class="row">
+            <div class="col-9">
+                {{ content }}
+            </div>
+            <div class="col-3">
+                {% include sidebar.html %}
+            </div>
+        </div>
     </div>
 
-    <!-- JQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- Custom JavaScript Files -->
-    <script src="./assets/js/main.js"></script>
-    <!-- Javascript animations -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    {% include footer-files.html %}
 </body>
