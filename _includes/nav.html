@@ -2,10 +2,15 @@
     .links {
         padding: 0;
         margin: 0;
+        float: left;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .links ul {
         display: inline-block;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .links ul li {
@@ -23,6 +28,10 @@
         color: #516096;
     }
 
+    .navbar-inner {
+        background: transparent !important;
+    }
+
     .navbar-brand {
         color: #2e3141 !important;
     }
@@ -32,7 +41,7 @@
     }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-xl navbar-light">
     <a class="navbar-brand" href="{{ site.baseurl }}/" target="_blank">{{ site.title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +78,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/blog/about/start-here">Start Here</a>
+                <a class="nav-link" href="{{ site.baseurl }}/blog/start-here" style="padding-right: 70px;">Start Here</a>
             </li>
             <div class="links">
                 <ul>

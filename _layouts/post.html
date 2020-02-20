@@ -9,9 +9,16 @@
 </head>
 
 <body>
-    {% include nav.html %}
+    <div class="container">
+        {% include nav.html %}
+    </div>
+
+    <div class="img-container">
+        <img class="img-slider" src="/personal-website-jekyll/assets/img/posts/about-me.jpg" alt="{{ post.alt }}">
+    </div>
 
     <div class="container">
+
         <div class="row">
             <div class="col-9">
                 {{ content }}
@@ -22,5 +29,6 @@
         </div>
     </div>
 
+    {% include footer.html %}
     {% include footer-files.html %}
 </body>

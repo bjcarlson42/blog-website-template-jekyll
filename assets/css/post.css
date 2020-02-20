@@ -1,0 +1,76 @@
+.w3-container ul li {
+    padding: 5px;
+}
+
+.row {
+    padding-top: 30px;
+}
+
+.w3-card-4 {
+    margin-top: 20px;
+}
+
+.img-container {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    width: 50%;
+}
+
+.img-slider {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .4;
+}
+
+.bottom-left h2 {
+    font-size: 3em;
+}
+
+.card-post-categories {
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.card-post-title {
+    text-align: left;
+    float: left;
+}
+
+.card-post-author, .card-post-date {
+    float: left;
+    text-align: center;
+}
+
+.card-post-excerpt {
+    padding: 10px 0;
+    text-align: left;
+}
+
+.img-post-second-section {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #2e3141;
+    border: 1px solid #2e3141;
+}
+
+.btn:hover {
+    background: #fff;
+    border: #2e3141 1px solid;
+    color: #2e3141;
+    transition: .35s ease;
+}

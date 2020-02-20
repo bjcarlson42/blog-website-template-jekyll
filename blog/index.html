@@ -6,56 +6,108 @@ layout: blog-default
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-
-<h1>Blog Home</h1>
-
-<div class="row">
-    <div class="col">
-        {% for post in site.posts limit:2 %}
-        <div class="w3-card-4">
-            <a href="{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}" style="width:100%"></a>
-            <div class="w3-container w3-center">
-                <ul style="list-style: none">
-                    <li>Date: {{ post.date }}</li>
-                    <li>Author: {{ post.author }}</li>
-                    <li style="text-align: left">
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="col">
-        {% for post in site.posts limit:2 %}
-        <div class="w3-card-4">
-            <a href="{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}" style="width:100%"></a>
-            <div class="w3-container w3-center">
-                <ul style="list-style: none">
-                    <li>Date: {{ post.date }}</li>
-                    <li>Author: {{ post.author }}</li>
-                    <li style="text-align: left">
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="col">
-        {% for post in site.posts limit:2 %}
-        <div class="w3-card-4">
-            <a href="{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}" style="width:100%"></a>
-            <div class="w3-container w3-center">
-                <ul style="list-style: none">
-                    <li>Date: {{ post.date }}</li>
-                    <li>Author: {{ post.author }}</li>
-                    <li style="text-align: left">
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
+<!-- Slider -->
+{% for post in site.posts limit:1 %}
+<div class="img-container">
+    <img class="img-slider" src="{{ post.img }}" alt="{{ post.alt }}">
+    <div class="bottom-left container">
+        <p>By <strong>{{ post.author }}</strong> in <strong>{{ post.categories[0] }}</strong></p>
+        <h2>{{ post.title }}</h2>
+        <a href="{{ site.baseurl }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i class="fa fa-arrow-right"></i></button></a>
     </div>
 </div>
+{% endfor %}
+
+<div class="container">
+    <!-- First post section -->
+    <div class="row">
+        <div class="col">
+            {% for post in site.posts limit:2 %}
+            <div class="w3-card-4" data-aos="fade-up">
+                <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                        style="width:100%"></a>
+                <div class="w3-container w3-center">
+                    {% for category in post.categories %}
+                    <a href="#" class="card-post-categories"><p>{{ category }}</p></a>
+                    {% endfor %}
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <p class="card-post-excerpt">{{ post.excerpt }}</p>
+                    <small class="card-post-author">Written by {{ post.author }}</small>
+                    <small class="card-post-date">Date: {{ post.date | date: '%B %d, %Y' }}</small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col">
+            {% for post in site.posts limit:2 %}
+            <div class="w3-card-4" data-aos="fade-up">
+                <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                        style="width:100%"></a>
+                <div class="w3-container w3-center">
+                    {% for category in post.categories %}
+                    <a href="#" class="card-post-categories">
+                        <p>{{ category }}</p>
+                    </a>
+                    {% endfor %}
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <p class="card-post-excerpt">{{ post.excerpt }}</p>
+                    <small class="card-post-author">Written by {{ post.author }}</small>
+                    <small class="card-post-date">Date: {{ post.date | date: '%B %d, %Y' }}</small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col">
+            {% for post in site.posts limit:2 %}
+            <div class="w3-card-4" data-aos="fade-up">
+                <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                        style="width:100%"></a>
+                <div class="w3-container w3-center">
+                    {% for category in post.categories %}
+                    <a href="#" class="card-post-categories">
+                        <p>{{ category }}</p>
+                    </a>
+                    {% endfor %}
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <p class="card-post-excerpt">{{ post.excerpt }}</p>
+                    <small class="card-post-author">Written by {{ post.author }}</small>
+                    <small class="card-post-date">Date: {{ post.date | date: '%B %d, %Y' }}</small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Ad -->
+    <div class="row">
+        {% include under-p1-ad.html %}
+    </div>
+
+    <!-- Second post section -->
+    <div class="row">
+        <div class="col-9">
+            {% for post in site.posts limit:3 %}
+            <div class="row">
+                <div class="col-4">
+                    <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}" class="img-post-second-section"></a>
+                </div>
+                <div class="col-8">
+                    <ul style="list-style: none">
+                        <li>{{ post.categories }}</li>
+                        <li style="text-align: left">
+                            <p>{{ post.excerpt }}</p>
+                        </li>
+                        <li>Author: {{ post.author }}</li>
+                        <li>Date: {{ post.date }}</li>
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-3">
+            {% include sidebar.html %}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
