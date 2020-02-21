@@ -28,7 +28,7 @@ First things first, let me introduce myself. My name is Benjamin Carlson. I am c
                 baseball,
                 soccer, basketball, cross country, and track.
 
-## High School
+### High School
 In high school I was very active, joining many organizations both inside and outside of school. I was a
             member of
             marching, concert, and jazz band, cross country, indoor and outdoor track, pride leaders, and co-founder of
@@ -37,7 +37,7 @@ In high school I was very active, joining many organizations both inside and out
             prestigious
             rank of Eagle Scout.
 
- ## College
+ ### College
 In college I run Division 1 cross country and track, played in the pep band, and am part of the Data Science
             Association. If you would rather see a visual timeline of my history, check out the about section of my
             website or the
@@ -61,7 +61,7 @@ I took my first Computer Science class senior year of high school. I instantly f
             or so web design and development. I learned HTML, CSS, Javascript and some web frameworks all during my free
             time.
 
-## Computer Science Internships
+### Computer Science Internships
 Along with these classes I also have two internships under my belt, both in the computer science field. The
             first was an
             I.T. internship for my town’s City Hall. Here my main tasks were to secure disposal of hard drives and other
@@ -77,7 +77,7 @@ The following summer I had the opportunity to intern at The Law Forum LLC. Here 
             and
             business standpoint. As you can see from this, I have a pretty extensive knowledge base.
 
-## I’m Mostly Self Taught
+### I’m Mostly Self Taught
 As a self taught programmer myself, I have picked up lots of tips and tricks along the way. I have also done
             some things
             that looking back, was not the best way to go about doing it. I hope to share these good practices along
@@ -92,7 +92,7 @@ Enough about me, let’s look at where I plan to take this site. My goal is to p
             tutorials. For anyone who many not be a beginner, don’t worry. The tutorials will get challenging (and
             exciting) fast!
 
-## Why Should you Code
+### Why Should you Code
 In this day and age, everything from video games, driving to work, and even taking a hot shower is powered
             by code.
             Knowing how to code is beginning to switch from an option to a necessity. Learning how to code is important
@@ -123,7 +123,7 @@ In this day and age, everything from video games, driving to work, and even taki
             most.
             Because of this philosophy, I am going to try and make these tutorials as fun as possible.
 
-## More Than Tutorials
+### More Than Tutorials
 Knowing how to code isn’t all that this website will offer. There is so much happening in this world today
             that is
             related to computer science but does not require knowing code to understand, which is why along with coding
@@ -149,7 +149,7 @@ This is why when choosing a language to learn, I tried to think of the language 
             first is
             Python. You have probably heard of Python before as it has been a big buzzword for quite some time now.
 
-## Uses of Python
+### Uses of Python
 When I wanted to start a coding website for beginners this was the first language that came to mind for a
             few reasons.
             First, it is not hard to learn. You can write your first Python program and understand basic syntax in a
