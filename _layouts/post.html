@@ -14,7 +14,7 @@
     </div>
 
     <div class="img-container">
-        <img class="img-slider" src="/personal-website-jekyll/assets/img/posts/about-me.jpg" alt="{{ post.alt }}">
+        {% include post-featured-image.html image=page.img alt=page.alt %}
     </div>
 
     <div class="container">
