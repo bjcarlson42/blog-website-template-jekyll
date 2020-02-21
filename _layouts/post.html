@@ -14,16 +14,16 @@
     </div>
 
     <div class="img-container">
-        {% include post-featured-image.html image=page.img alt=page.alt %}
+        {% include post-featured-image.html image=page.img alt=page.alt title=page.title categories=page.categories author=page.author date=page.date %}
     </div>
 
     <div class="container">
 
         <div class="row">
-            <div class="col-9">
+            <div class="col-lg-9">
                 {{ content }}
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
                 {% include sidebar.html %}
             </div>
         </div>

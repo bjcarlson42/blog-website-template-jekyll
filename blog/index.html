@@ -12,7 +12,7 @@ layout: blog-default
     <img class="img-slider" src="{{ post.img }}" alt="{{ post.alt }}">
     <div class="bottom-left container">
         <p>By <strong>{{ post.author }}</strong> in <strong>{{ post.categories[0] }}</strong></p>
-        <h2>{{ post.title }}</h2>
+        <a class="a-main-post-title" href="{{ site.baseurl }}/{{ post.url }}"><h2>{{ post.title }}</h2></a>
         <a href="{{ site.baseurl }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i
                     class="fa fa-arrow-right"></i></button></a>
     </div>
@@ -23,8 +23,8 @@ layout: blog-default
 <div class="container">
     <div class="row">
         {% for post in site.posts limit:3 offset:1 %}
-        <div class="col">
-            <div class="w3-card-4" data-aos="fade-up">
+        <div class="col-md">
+            <div class="w3-card-4" style="width: 100%" data-aos="fade-up">
                 <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
                         style="width:100%"></a>
                 <div class="w3-container w3-center">
@@ -47,7 +47,7 @@ layout: blog-default
 
     <div class="row">
         {% for post in site.posts limit:3 offset:4 %}
-        <div class="col">
+        <div class="col-md">
             <div class="w3-card-4" data-aos="fade-up">
                 <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
                         style="width:100%"></a>
@@ -76,14 +76,14 @@ layout: blog-default
 
     <!-- Second post section -->
     <div class="row">
-        <div class="col-9">
+        <div class="col-lg-9">
             {% for post in site.posts limit:3 offset:7 %}
             <div class="row" data-aos="fade-up">
-                <div class="col-4">
+                <div class="col-md-4">
                     <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
                             class="img-post-second-section"></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     {% for category in post.categories %}
                     <div class="category-container">
                         <a href="#" class="card-post-categories">
@@ -99,10 +99,10 @@ layout: blog-default
             </div>
             {% endfor %}
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
             {% include sidebar.html %}
         </div>
     </div>
 </div>
 
-{% include footer.html %}
+{% include footer-files.html %}

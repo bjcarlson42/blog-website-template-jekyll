@@ -26,11 +26,33 @@
     width: 50%;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1090px) {
     .bottom-left {
-        bottom: 30%;
+        bottom: 25%;
         left: 10%;
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bottom-left {
+        bottom: 20%;
+        left: 10%;
+        width: 90%;
+    }
+    .a-main-post-title {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .bottom-left {
+        bottom: 20%;
+        left: 10%;
+        width: 90%;
+    }
+    .a-main-post-title {
+        font-size: .8em;
     }
 }
 
@@ -92,4 +114,9 @@
     border: #2e3141 1px solid;
     color: #2e3141;
     transition: .35s ease;
+}
+
+.a-main-post-title:hover {
+    color: #fff;
+    text-decoration: none;
 }

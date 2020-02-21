@@ -1,2 +1,47 @@
-<img class="img-slider" src="{{ include.image }}"
-    alt="{{ include.alt | default: 'image representing a theme in this article' }}" />
+<style>
+    .container-img-include {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+
+    .centered h1 {
+        font-size: 4em;
+    }
+
+    .category-p {
+        color: #fff;
+        display: inline-block;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    .category-p:hover {
+        background-color: #2e3141;
+        border: 1px solid #2e3141;
+    }
+</style>
+
+<div class="container-img-include">
+    <img class="img-slider" src="{{ include.image }}"
+        alt="{{ include.alt | default: 'image representing a theme in this article' }}" />
+    <div class="centered">
+        {% for category in include.categories%}
+        <a href="#">
+            <p class="category-p">{{ category }}</p>
+        </a>
+        {% endfor %}
+        <h1>{{ include.title }}</h1>
+        <p>By {{ include.author }} | {{ include.date | date: '%B %d, %Y' }}</p>
+    </div>
+</div>
