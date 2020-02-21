@@ -13,69 +13,60 @@ layout: blog-default
     <div class="bottom-left container">
         <p>By <strong>{{ post.author }}</strong> in <strong>{{ post.categories[0] }}</strong></p>
         <h2>{{ post.title }}</h2>
-        <a href="{{ site.baseurl }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i class="fa fa-arrow-right"></i></button></a>
+        <a href="{{ site.baseurl }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i
+                    class="fa fa-arrow-right"></i></button></a>
     </div>
 </div>
 {% endfor %}
 
+<!-- First post section -->
 <div class="container">
-    <!-- First post section -->
     <div class="row">
+        {% for post in site.posts limit:3 offset:1 %}
         <div class="col">
-            {% for post in site.posts limit:2 %}
             <div class="w3-card-4" data-aos="fade-up">
                 <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
                         style="width:100%"></a>
                 <div class="w3-container w3-center">
                     {% for category in post.categories %}
-                    <a href="#" class="card-post-categories"><p>{{ category }}</p></a>
+                    <div class="category-container">
+                        <a href="#" class="card-post-categories">
+                            <p>{{ category }}</p>
+                        </a>
+                    </div>
                     {% endfor %}
                     <h3 class="card-post-title">{{ post.title }}</h3>
-                    <p class="card-post-excerpt">{{ post.excerpt }}</p>
-                    <small class="card-post-author">Written by {{ post.author }}</small>
-                    <small class="card-post-date">Date: {{ post.date | date: '%B %d, %Y' }}</small>
+                    <p class="card-post-description">{{ post.description }}</p>
+                    <small class="card-post-author-date">Written by {{ post.author }} on
+                        {{ post.date | date: '%B %d, %Y' }}</small>
                 </div>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        {% for post in site.posts limit:3 offset:4 %}
         <div class="col">
-            {% for post in site.posts limit:2 %}
             <div class="w3-card-4" data-aos="fade-up">
                 <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
                         style="width:100%"></a>
                 <div class="w3-container w3-center">
                     {% for category in post.categories %}
-                    <a href="#" class="card-post-categories">
-                        <p>{{ category }}</p>
-                    </a>
+                    <div class="category-container">
+                        <a href="#" class="card-post-categories">
+                            <p>{{ category }}</p>
+                        </a>
+                    </div>
                     {% endfor %}
                     <h3 class="card-post-title">{{ post.title }}</h3>
-                    <p class="card-post-excerpt">{{ post.excerpt }}</p>
-                    <small class="card-post-author">Written by {{ post.author }}</small>
-                    <small class="card-post-date">Date: {{ post.date | date: '%B %d, %Y' }}</small>
+                    <p class="card-post-description">{{ post.description }}</p>
+                    <small class="card-post-author-date">Written by {{ post.author }} on
+                        {{ post.date | date: '%B %d, %Y' }}</small>
                 </div>
             </div>
-            {% endfor %}
         </div>
-        <div class="col">
-            {% for post in site.posts limit:2 %}
-            <div class="w3-card-4" data-aos="fade-up">
-                <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
-                        style="width:100%"></a>
-                <div class="w3-container w3-center">
-                    {% for category in post.categories %}
-                    <a href="#" class="card-post-categories">
-                        <p>{{ category }}</p>
-                    </a>
-                    {% endfor %}
-                    <h3 class="card-post-title">{{ post.title }}</h3>
-                    <p class="card-post-excerpt">{{ post.excerpt }}</p>
-                    <small class="card-post-author">Written by {{ post.author }}</small>
-                    <small class="card-post-date">Date: {{ post.date | date: '%B %d, %Y' }}</small>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
     </div>
 
     <!-- Ad -->
@@ -86,19 +77,20 @@ layout: blog-default
     <!-- Second post section -->
     <div class="row">
         <div class="col-9">
-            {% for post in site.posts limit:3 %}
-            <div class="row">
+            {% for post in site.posts limit:3 offset:7 %}
+            <div class="row" data-aos="fade-up">
                 <div class="col-4">
-                    <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}" class="img-post-second-section"></a>
+                    <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                            class="img-post-second-section"></a>
                 </div>
                 <div class="col-8">
                     <ul style="list-style: none">
                         <li>{{ post.categories }}</li>
                         <li style="text-align: left">
-                            <p>{{ post.excerpt }}</p>
+                            <p>{{ post.description }}</p>
                         </li>
                         <li>Author: {{ post.author }}</li>
-                        <li>Date: {{ post.date }}</li>
+                        <li>Date: {{ post.date | date: '%B %d, %Y' }}</li>
                     </ul>
                 </div>
             </div>

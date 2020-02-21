@@ -3,14 +3,14 @@ layout: post
 title: "How to Craft The Perfect Personal Website in 2020"
 date: "2020-02-16"
 categories: ['How To','Web Development']
-tags: ['First Post','Internships','Python','Programming']
+tags: TODO
 img: /personal-website-jekyll/assets/img/posts/how-to-craft-the-perfect-personal-website-in-2020.jpg
 comments: true
 author: Benjamin Carlson
-description: TODO
+description: New year, new personal website. Whether you are a developer, freelancer, photographer, designer, or something else, having an online presence is important...
 ---
 
-Introduction
+## Introduction
 New year, new personal website. Whether you are a developer, freelancer, photographer, designer, or something else, having an online presence is important. You need a way to show your work, gain clients, get yourself out there. A personal website is a great way to do this. In this article, I’ll talk about the must-haves in your website and look at examples from my own personal website.
 
 {% include under-p1-ad.html %}

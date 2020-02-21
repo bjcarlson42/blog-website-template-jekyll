@@ -26,6 +26,14 @@
     width: 50%;
 }
 
+@media screen and (max-width: 769px) {
+    .bottom-left {
+        bottom: 30%;
+        left: 10%;
+        width: 80%;
+    }
+}
+
 .img-slider {
     height: 100%;
     width: 100%;
@@ -41,21 +49,32 @@
     float: left;
     text-align: left;
     padding-right: 10px;
+    color: #2e3141;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.category-container {
+    margin-top: 10px;
 }
 
 .card-post-title {
     text-align: left;
     float: left;
+    padding: 5px 0;
 }
 
-.card-post-author, .card-post-date {
+.card-post-author-date {
     float: left;
-    text-align: center;
+    text-align: left;
+    padding: 5px 0;
 }
 
-.card-post-excerpt {
-    padding: 10px 0;
+.card-post-description {
+    padding: 15px 0;
     text-align: left;
+    float: left;
+    color: rgb(117, 117, 117);
 }
 
 .img-post-second-section {
