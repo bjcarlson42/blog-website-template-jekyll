@@ -120,3 +120,11 @@
     color: #fff;
     text-decoration: none;
 }
+
+.col-lg-9 h2, .col-lg-9 p, .col-lg-9 h4, .col-lg-9 h3, .col-lg-9 h5, .col-lg-9 h6 {
+    color: #2e3141;
+}
+
+.col-lg-9 h2 {
+    padding-top: 10px;
+}

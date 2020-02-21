@@ -30,7 +30,11 @@
 <p>Email:</p>
 <input type="text" name="" id="">
 <input type="submit" name="" id=""> -->
-<h4 data-aos="fade-up">Recently In:</h4>
+<a style="color: #2e3141" target="_blank" href="https://www.westgatereservations.com/9258829060/">
+    <h4>Save big on a Westgate Vacation!</h4>
+    <img src="{{ site.baseurl }}/assets/img/westgate.jpg" alt="Westgate Vacation" width="100%" height="200px">
+</a>
+<h4 data-aos="fade-up" style="padding-top: 10px">Recently In:</h4>
 {% for post in site.posts limit:3 %}
 <a href="{{ site.baseurl }}/{{ post.url }}">
     <div class="container-sidebar" data-aos="fade-up">
