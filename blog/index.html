@@ -1,24 +1,108 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: default
+layout: blog-default
 ---
 
-<h2>Recent Posts:</h2>
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
-{% for category in site.categories %}
-<h3>{{ category[0] }}</h3>
-<ul>
-    {% for post in category[1] %}
-    <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<!-- Slider -->
+{% for post in site.posts limit:1 %}
+<div class="img-container">
+    <img class="img-slider" src="{{ post.img }}" alt="{{ post.alt }}">
+    <div class="bottom-left container">
+        <p>By <strong>{{ post.author }}</strong> in <strong>{{ post.categories[0] }}</strong></p>
+        <h2>{{ post.title }}</h2>
+        <a href="{{ site.baseurl }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i
+                    class="fa fa-arrow-right"></i></button></a>
+    </div>
+</div>
 {% endfor %}
+
+<!-- First post section -->
+<div class="container">
+    <div class="row">
+        {% for post in site.posts limit:3 offset:1 %}
+        <div class="col">
+            <div class="w3-card-4" data-aos="fade-up">
+                <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                        style="width:100%"></a>
+                <div class="w3-container w3-center">
+                    {% for category in post.categories %}
+                    <div class="category-container">
+                        <a href="#" class="card-post-categories">
+                            <p>{{ category }}</p>
+                        </a>
+                    </div>
+                    {% endfor %}
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <p class="card-post-description">{{ post.description }}</p>
+                    <small class="card-post-author-date">Written by {{ post.author }} on
+                        {{ post.date | date: '%B %d, %Y' }}</small>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        {% for post in site.posts limit:3 offset:4 %}
+        <div class="col">
+            <div class="w3-card-4" data-aos="fade-up">
+                <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                        style="width:100%"></a>
+                <div class="w3-container w3-center">
+                    {% for category in post.categories %}
+                    <div class="category-container">
+                        <a href="#" class="card-post-categories">
+                            <p>{{ category }}</p>
+                        </a>
+                    </div>
+                    {% endfor %}
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <p class="card-post-description">{{ post.description }}</p>
+                    <small class="card-post-author-date">Written by {{ post.author }} on
+                        {{ post.date | date: '%B %d, %Y' }}</small>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Ad -->
+    <div class="row">
+        {% include under-p1-ad.html %}
+    </div>
+
+    <!-- Second post section -->
+    <div class="row">
+        <div class="col-9">
+            {% for post in site.posts limit:3 offset:7 %}
+            <div class="row" data-aos="fade-up">
+                <div class="col-4">
+                    <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                            class="img-post-second-section"></a>
+                </div>
+                <div class="col-8">
+                    {% for category in post.categories %}
+                    <div class="category-container">
+                        <a href="#" class="card-post-categories">
+                            <p>{{ category }}</p>
+                        </a>
+                    </div>
+                    {% endfor %}
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <p class="card-post-description">{{ post.description }}</p>
+                    <small class="card-post-author-date">Written by {{ post.author }} on
+                        {{ post.date | date: '%B %d, %Y' }}</small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-3">
+            {% include sidebar.html %}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

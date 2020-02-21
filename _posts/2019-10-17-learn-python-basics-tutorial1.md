@@ -3,13 +3,15 @@ layout: post
 title: "Learn Python Basics: Tutorial 1"
 date: 2019-10-17
 categories: ['Programming', 'Python', 'Tutorial']
-tags: ['TODO']
+tags: ['basics','ide','practice','programming language']
 comments: true
 author: Benjamin Carlson
-description: TODO
+description: Welcome back to the second post. Because this is the first tutorial, there is a lot of set up that we need to do before we can even start programming in Python...
+img: /personal-website-jekyll/assets/img/posts/learn-python-basics-tutorial1.png
+alt: Python Programming Logo
 ---
 
-Introduction
+# Introduction
 
 Welcome back to the second post. Because this is the first tutorial, there is a lot of set up that we need to do before we can even start programming in Python. Without wasting any time, let's dive in! Keep in mind, all of the code in this tutorial can be found on my GitHub, specifically this repository.
 
@@ -17,11 +19,11 @@ Welcome back to the second post. Because this is the first tutorial, there is a 
 
 Quick note: If you already have Python installed on your machine and would like to skip the basic terminology and the setup, feel free to skip to The Basics section. If you are familiar with the basics of Python, you might want to skip to the second tutorial. Let's get learning!
 
-Terminology
+# Terminology
 
 Before we do any programming at all, it is important that we go over some basic terminology. As we get further along I will introduce more terminology but for now here are the basics to get you started and comfortable.
 
-IDE
+# IDE
 
 An IDE or Integrated Development Environment is where we will be writing all our code. Although it is technically possible to write code in a basic text editor, like notepad, IDE’s give you a better environment with more tools, plugins, and other helpful things to help you code faster and more efficiently. In this tutorial, we will be using visual studio code(VS Code). I will go into more detail on how to download VS Code and the advantages of using it later in this tutorial. The standard Python IDE is called IDLE. IDLE is not the best IDE and we will not be using it in this tutorial series because VS Code is 100 times better. If you would like to learn more about IDLE you can do so here. 
 

@@ -3,20 +3,18 @@ layout: post
 title: "Why You Need To Be Able To Code: And A Little About Me"
 date: 2019-10-08
 categories: ['My Life']
-tags: ['TODO']
+tags: ['first post','internships','programming','python']
 comments: true
 author: Benjamin Carlson
-description: TODO
+description: Hello and welcome to this website! It has always been a dream of mine to share things I am passionate about with the...
+img: /personal-website-jekyll/assets/img/posts/about-me.jpg
+alt: About Me Img
 ---
 
 ## Introduction
 Hello and welcome to this website! It has always been a dream of mine to share things I am passionate about with the
-                world. I am finally taking that dream and turning it into a reality by starting this website. As you
-                read through
-                this
-                post, you will learn more about me, my experiences, and what you, the reader, will get out of this site.
-                I hope you
-                enjoy!
+world. I am finally taking that dream and turning it into a reality by starting this website. As you read through this post, you will learn more about me, my experiences, and what you, the reader, will get out of this site.
+I hope you enjoy!
 
 {% include under-p1-ad.html %}
 

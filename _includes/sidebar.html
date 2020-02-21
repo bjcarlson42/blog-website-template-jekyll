@@ -1,14 +1,44 @@
-<h4>Learn Tech The Right Way</h4>
+<style>
+    .container-sidebar {
+        position: relative;
+        text-align: center;
+        color: #2e3141;
+    }
+
+    .centered-sidebar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 95%;
+        transform: translate(-50%, -50%);
+    }
+
+    .img-sidebar {
+        margin: 20px 0;
+        border-radius: 15px;
+        opacity: .4;
+        width: 100%;
+    }
+
+    .img-sidebar:hover {
+        opacity: 1;
+    }
+</style>
+
+<!-- <h4>Learn Tech The Right Way</h4>
 <p>Subscribe to be notified of new posts, coding tips and tricks, and more.</p>
 <p>Email:</p>
 <input type="text" name="" id="">
-<input type="submit" name="" id="">
-<h4>Recently In:</h4>
-<ul>
-    {% for post in site.posts limit:3 %}
-    <li>
-        <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<input type="submit" name="" id=""> -->
+<h4 data-aos="fade-up">Recently In:</h4>
+{% for post in site.posts limit:3 %}
+<a href="{{ site.baseurl }}/{{ post.url }}">
+    <div class="container-sidebar" data-aos="fade-up">
+        <img class="img-sidebar" src="{{ post.img }}" alt="{{ post.alt }}">
+        <div class="centered-sidebar">
+            <p>{{ post.title }}</p>
+        </div>
+    </div>
+</a>
+{% endfor %}
 {% include under-p1-ad.html %}
