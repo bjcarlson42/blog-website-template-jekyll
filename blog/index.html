@@ -84,14 +84,17 @@ layout: blog-default
                             class="img-post-second-section"></a>
                 </div>
                 <div class="col-8">
-                    <ul style="list-style: none">
-                        <li>{{ post.categories }}</li>
-                        <li style="text-align: left">
-                            <p>{{ post.description }}</p>
-                        </li>
-                        <li>Author: {{ post.author }}</li>
-                        <li>Date: {{ post.date | date: '%B %d, %Y' }}</li>
-                    </ul>
+                    {% for category in post.categories %}
+                    <div class="category-container">
+                        <a href="#" class="card-post-categories">
+                            <p>{{ category }}</p>
+                        </a>
+                    </div>
+                    {% endfor %}
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <p class="card-post-description">{{ post.description }}</p>
+                    <small class="card-post-author-date">Written by {{ post.author }} on
+                        {{ post.date | date: '%B %d, %Y' }}</small>
                 </div>
             </div>
             {% endfor %}
