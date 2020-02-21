@@ -34,6 +34,33 @@ theme: minima
 plugins:
   - jekyll-feed
 
+emptyArray: []
+
+comments:
+  receiver: https://bjcarlson42.github.io/api/PostComment
+
+authors:
+  bjcarlson42:
+    name: Benjamin Carlson
+    email: bjcarlson42@gmail.com
+    url: https://bjcarlson42.github.io/personal-website-jekyll/
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      author: Benjamin Carlson
+  -
+    scope:
+      path: '_posts'
+      type: posts
+    values:
+      layout: post
+      author: Benjamin Carlson
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
