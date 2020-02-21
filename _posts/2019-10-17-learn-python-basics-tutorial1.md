@@ -68,7 +68,7 @@ You might get some messages saying something along the lines of you don’t have
 
 At this point you should have a blank Python file. We will start by writing the following line of code:
 
-% highlight python%} 
+{% highlight python %} 
 print(‘Hello World!’)
 {% endhighlight %}
 
