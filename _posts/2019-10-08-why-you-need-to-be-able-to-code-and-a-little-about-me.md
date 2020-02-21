@@ -37,7 +37,7 @@ In high school I was very active, joining many organizations both inside and out
             prestigious
             rank of Eagle Scout.
 
- ### College
+### College
 In college I run Division 1 cross country and track, played in the pep band, and am part of the Data Science
             Association. If you would rather see a visual timeline of my history, check out the about section of my
             website or the
