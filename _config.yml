@@ -49,9 +49,9 @@ defaults:
   -
     scope:
       path: ''
-      type: posts
+      type: pages
     values:
-      layout: post
+      layout: page
       author: Benjamin Carlson
   -
     scope:
@@ -60,6 +60,7 @@ defaults:
     values:
       layout: post
       author: Benjamin Carlson
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
