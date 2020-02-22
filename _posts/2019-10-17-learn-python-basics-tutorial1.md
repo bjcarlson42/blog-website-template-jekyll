@@ -7,7 +7,7 @@ tags: ['basics','ide','practice','programming language']
 comments: true
 author: Benjamin Carlson
 description: Welcome back to the second post. Because this is the first tutorial, there is a lot of set up that we need to do before we can even start programming in Python...
-img: /assets/img/posts/learn-python-basics-tutorial1.png
+img: /assets/img/posts/2-python-tutorial-1/learn-python-basics-tutorial1.png
 alt: Python Programming Logo
 ---
 

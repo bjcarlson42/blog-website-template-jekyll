@@ -7,7 +7,7 @@ tags: ['first post','internships','programming','python']
 comments: true
 author: Benjamin Carlson
 description: Hello and welcome to this website! It has always been a dream of mine to share things I am passionate about with the...
-img: /assets/img/posts/about-me.jpg
+img: /assets/img/posts/1-about-me/about-me.jpg
 alt: About Me Img
 ---
 

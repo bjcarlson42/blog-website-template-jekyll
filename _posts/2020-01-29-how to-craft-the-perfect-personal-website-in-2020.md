@@ -4,7 +4,7 @@ title: "How to Craft The Perfect Personal Website in 2020"
 date: "2020-02-16"
 categories: ['How To','Web Development']
 tags: TODO
-img: /assets/img/posts/how-to-craft-the-perfect-personal-website-in-2020.jpg
+img: /assets/img/posts/9-how-to-craft-the-perfect-personal-website/how-to-craft-the-perfect-personal-website-in-2020.jpg
 comments: true
 author: Benjamin Carlson
 description: New year, new personal website. Whether you are a developer, freelancer, photographer, designer, or something else, having an online presence is important...

@@ -7,7 +7,7 @@ tags: ['html','css','navigation bar']
 comments: true
 author: Benjamin Carlson
 description: A navigation bar is used in every website. They may look different across each site due to branding, but the underlying code is very similar. In this tutorial I will go over how to make a drop-down navigation...
-img: /assets/img/posts/html-and-css-nav-bar.jpg
+img: /assets/img/posts/6-html-css-dropdown-menu/html-and-css-nav-bar.jpg
 alt: Javascript book
 ---
 

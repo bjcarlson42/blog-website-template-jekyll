@@ -257,7 +257,7 @@
             <ul>
                 {% for post in site.posts limit:7 %}
                 <li data-aos="fade-up">
-                    <a href="/blog/{{ post.url }}" target="_blank">{{ post.title }}</a>
+                    <a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
                 </li>
                 {% endfor %}
             </ul>

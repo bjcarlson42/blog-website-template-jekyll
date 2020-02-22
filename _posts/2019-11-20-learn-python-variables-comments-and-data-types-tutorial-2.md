@@ -7,7 +7,7 @@ tags: ['commenting','variables','data types','escape sequences']
 comments: true
 author: Benjamin Carlson
 description: Welcome back to the second post in the learn Python series! If you haven't read the first post where we go over setting up a Python coding environment on your local machine and write a simple "hello world program"...
-img: /assets/img/posts/learn-python-basics-tutorial1.png
+img: /assets/img/posts/5-python-tutorial-2/python-tutorial-2.jpg
 alt: Python Programming
 ---
 
