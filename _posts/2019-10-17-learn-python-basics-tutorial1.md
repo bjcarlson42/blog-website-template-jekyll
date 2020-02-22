@@ -61,14 +61,11 @@ Now, exit out of the welcome screen. Click file, new file. This will create an u
 
 You might get some messages saying something along the lines of you don’t have the necessary components to run Python code. Simply hit install and let the IDE do its job and install the necessary Python components.
 
-
-
-
 ### Writing our First Line
 
 At this point you should have a blank Python file. We will start by writing the following line of code:
 
-{% highlight python %} 
+{% highlight python linenos %}
 print(‘Hello World!’)
 {% endhighlight %}
 
