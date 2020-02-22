@@ -14,6 +14,8 @@ alt: Datafication
 ## Introduction
 Data is all around us and has been growing at an exponential rate in the past couple of years. Social media sites like Twitter and Instagram, activity trackers like Fitbits, and even your smart car are collecting data that can be used to predict things. In this post I will go over what datafication is and how it is affecting you every day even when you probably don’t even realize it. Note: This was originally an assignment for my applied analytics for data science class but I have modified it for this post.
 
+{% include under-p1-ad.html %}
+
 ## What is Datafication?
 Datafication can be defined as a technological trend turning many aspects of our lives into data which is subsequently transferred into information realized as a new form of value. In simple terms this is saying everything we do can be recorded and turned into data. This data can then be analyzed in many different ways. The driving force behind datafication is the “Internet of things”. 
 

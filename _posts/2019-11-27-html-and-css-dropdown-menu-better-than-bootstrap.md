@@ -13,3 +13,5 @@ alt: Javascript book
 
 ## Introduction
 A navigation bar is used in every website. They may look different across each site due to branding, but the underlying code is very similar. In this tutorial I will go over how to make a drop-down navigation bar in pure HTML and CSS. I will assume that you know basic HTML and CSS syntax and structure. As always, the code for this tutorial can be found on my GitHub.
+
+{% include under-p1-ad.html %}

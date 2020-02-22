@@ -14,3 +14,5 @@ alt: Python Programming
 ## Introduction
 
 Welcome back to the second post in the learn Python series! If you haven't read the first post where we go over setting up a Python coding environment on your local machine and write a simple "hello world program", you can do so here. Also, remember that you can find all the code for this tutorial at my GitHub. Otherwise, let's jump right into this tutorial.
+
+{% include under-p1-ad.html %}

@@ -14,6 +14,8 @@ alt: World Wide Web
 ## Introduction
 The World Wide Web, or more commonly known as the internet, is a way for billions of people to connect, share, and interact online. Most people think they understand how the internet works but it’s more complex than you may think. How and why did the world wide web start? What’s an IP address or a DNS? What’s a hyperlink or HTTP? These are all things that will be covered in this in this post. 
 
+{% include under-p1-ad.html %}
+
 ## The Very Beginning
 Sir Tim Berners-Lee is credited with inventing the world wide web in 1989. A British born computer scientist, Lee was interested in computers from an early age. His curiosity in electronics carried him throughout his days. He eventually attended and graduated from Oxford University. After graduation Berners-Lee became a software engineer at CERN.
 
