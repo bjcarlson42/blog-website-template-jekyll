@@ -65,9 +65,9 @@ You might get some messages saying something along the lines of you don’t have
 
 At this point you should have a blank Python file. We will start by writing the following line of code:
 
-{% highlight python linenos %}
+'''python
 print(‘Hello World!’)
-{% endhighlight %}
+'''
 
 You will notice a few things as you type this. One, the VS code highlights words in different colors. Also, VS Code auto completes and suggests words for you. These are 2 powerful things that good IDEs have. It makes it easier to write and read code.
 
