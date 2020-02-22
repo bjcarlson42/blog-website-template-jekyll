@@ -7,7 +7,7 @@ tags: ['domain name servers','html','http','tim berners lee','uri','url','world 
 comments: true
 author: Benjamin Carlson
 description: The World Wide Web, or more commonly known as the internet, is a way for billions of people to connect, share, and interact online. Most people think they understand how the internet works but it’s more complex than you may think...
-img: /personal-website-jekyll/assets/img/posts/understanding-the-world-wide-web.jpg
+img: /assets/img/posts/understanding-the-world-wide-web.jpg
 alt: World Wide Web
 ---
 

@@ -13,7 +13,7 @@ layout: blog-default
     <div class="bottom-left container">
         <p>By <strong>{{ post.author }}</strong> in <strong>{{ post.categories[0] }}</strong></p>
         <a class="a-main-post-title" href="{{ site.baseurl }}/{{ post.url }}"><h2>{{ post.title }}</h2></a>
-        <a href="{{ site.baseurl }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i
+        <a href="{{ site.url }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i
                     class="fa fa-arrow-right"></i></button></a>
     </div>
 </div>
@@ -25,7 +25,7 @@ layout: blog-default
         {% for post in site.posts limit:3 offset:1 %}
         <div class="col-md">
             <div class="w3-card-4" style="width: 100%" data-aos="fade-up">
-                <a href="{{ site.url }}/{{ post.url }}"><img src="{{ site.url }}/blog/{{ post.img }}" alt="{{ post.alt }}"
+                <a href="{{ site.url }}/{{ post.url }}"><img src="{{ site.url }}/{{ post.img }}" alt="{{ post.alt }}"
                         style="width:100%"></a>
                 <div class="w3-container w3-center">
                     {% for category in post.categories %}
@@ -49,7 +49,7 @@ layout: blog-default
         {% for post in site.posts limit:3 offset:4 %}
         <div class="col-md">
             <div class="w3-card-4" data-aos="fade-up">
-                <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                <a href="{{ site.url }}/{{ post.url }}"><img src="{{ site.url }}/{{ post.img }}" alt="{{ post.alt }}"
                         style="width:100%"></a>
                 <div class="w3-container w3-center">
                     {% for category in post.categories %}
@@ -80,7 +80,7 @@ layout: blog-default
             {% for post in site.posts limit:3 offset:7 %}
             <div class="row" data-aos="fade-up">
                 <div class="col-md-4">
-                    <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ post.img }}" alt="{{ post.alt }}"
+                    <a href="{{ site.url }}/{{ post.url }}"><img src="{{ site.url }}/{{ post.img }}" alt="{{ post.alt }}"
                             class="img-post-second-section"></a>
                 </div>
                 <div class="col-md-8">
