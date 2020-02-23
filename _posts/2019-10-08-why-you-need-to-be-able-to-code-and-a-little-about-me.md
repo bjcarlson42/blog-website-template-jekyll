@@ -6,7 +6,9 @@ categories: ['My Life']
 tags: ['first post','internships','programming','python']
 comments: true
 author: Benjamin Carlson
-description: Hello and welcome to this website! It has always been a dream of mine to share things I am passionate about with the...
+description: Hello and welcome to this website! It has always been a dream of mine to share things I am passionate about with the
+meta-description: Hello and welcome to my first blog post! My name is Benjamin Carlson and in this post I'll explain why you should code and learn python.
+keywords: 'first blog post, why you should code, learn python'
 img: /assets/img/posts/1-about-me/about-me.jpg
 alt: About Me Img
 ---

@@ -30,6 +30,34 @@
         background-color: #2e3141;
         border: 1px solid #2e3141;
     }
+
+    @media screen and (max-width: 769px) {
+        .centered h1 {
+            font-size: 3.2em;
+        }
+    }
+
+    @media screen and (max-width: 426px) {
+        .centered h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        .centered h1 {
+            font-size: 2em;
+        }
+
+        .category-p {
+            display: inline-block;
+            padding: 2px;
+            margin-right: 2px;
+        }
+
+        .centered {
+            width: 90%;
+        }
+    }
 </style>
 
 <div class="container-img-include">
@@ -37,11 +65,12 @@
         alt="{{ include.alt | default: 'image representing a theme in this article' }}" />
     <div class="centered">
         {% for category in include.categories%}
-        <a href="#">
+        <a href="{{ site.baseurl }}/blog/start-here">
             <p class="category-p">{{ category }}</p>
         </a>
         {% endfor %}
         <h1>{{ include.title }}</h1>
-        <p>By {{ include.author }} | {{ include.date | date: '%B %d, %Y' }}</p>
+        <p>By <a href="{{ site.baseurl }}/blog/authors/{{ include.author }}">{{ include.author }}</a> |
+            {{ include.date | date: '%B %d, %Y' }}</p>
     </div>
 </div>

@@ -84,6 +84,7 @@
     text-align: left;
     float: left;
     padding: 5px 0;
+    color: #2e3141;
 }
 
 .card-post-author-date {
@@ -131,4 +132,15 @@
 
 .col-lg-9 h2 {
     font-size: 2.5em;
+}
+
+/* Flex box for posts */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
 }

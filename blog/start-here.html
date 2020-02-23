@@ -24,7 +24,9 @@ layout: blog-default
 </style>
 
 <div class="container">
+    <hr>
     <h2>What Do You Want To Learn About Today?</h2>
+    <hr>
     {% assign categories_list = site.categories %}
     {% if categories_list.first[0] == null %}
     {% for category in categories_list %}
@@ -36,6 +38,7 @@ layout: blog-default
     <a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><p class="category-p">{{ category[0] | camelcase }} ({{ category[1].size }})</p></a>
     {% endfor %}
     {% endif %}
+    <hr>
     {% assign categories_list = nil %}
 
     {% for category in site.categories %}
