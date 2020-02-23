@@ -58,6 +58,27 @@
             width: 90%;
         }
     }
+
+    a.left {
+        position: relative;
+    }
+
+    a.left:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a.left:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
 </style>
 
 <div class="container-img-include">
@@ -70,7 +91,8 @@
         </a>
         {% endfor %}
         <h1>{{ include.title }}</h1>
-        <p>By <a style="color: #fff" href="{{ site.baseurl }}/blog/authors/{{ include.author }}"><strong>{{ include.author }}</strong></a> |
+        <p>By <a class="left" style="color: #fff"
+                href="{{ site.baseurl }}/blog/authors/{{ include.author }}"><strong>{{ include.author }}</strong></a> |
             {{ include.date | date: '%B %d, %Y' }}</p>
     </div>
 </div>

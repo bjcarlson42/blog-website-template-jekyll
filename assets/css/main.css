@@ -45,6 +45,35 @@ a {
     transition: .35s ease;
 }
 
+a.left {
+    position: relative;
+}
+
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.left2:before {
+    background-color: #2e3141;
+}
+
+a.left2:hover {
+    color: #2e3141;
+}
+
 /*************
 * Navigation
 *************/
