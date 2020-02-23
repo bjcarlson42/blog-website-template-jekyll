@@ -70,7 +70,7 @@
         </a>
         {% endfor %}
         <h1>{{ include.title }}</h1>
-        <p>By <a href="{{ site.baseurl }}/blog/authors/{{ include.author }}">{{ include.author }}</a> |
+        <p>By <a style="color: #fff" href="{{ site.baseurl }}/blog/authors/{{ include.author }}"><strong>{{ include.author }}</strong></a> |
             {{ include.date | date: '%B %d, %Y' }}</p>
     </div>
 </div>

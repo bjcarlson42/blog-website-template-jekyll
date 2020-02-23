@@ -6,7 +6,9 @@ categories: ['Data Science']
 tags: ['big data','datafication','internet of things']
 comments: true
 author: Benjamin Carlson
-description: Data is all around us and has been growing at an exponential rate in the past couple of years. Social media sites like Twitter and Instagram, activity trackers...
+description: Data is all around us and has been growing at an exponential rate in the past couple of years. Social media sites like Twitter and Instagram, activity trackers
+meta-description: datafication and the internet of things are a buzz word. They are growing bigger as big data and analytics takes off. In this article I'll talk about what is datafication and the internet of things
+keywords: 'datafication, datafication definition, what is datafication, internet of things'
 img: /assets/img/posts/3-datafication-what-makes-humans-data-points/datafication-what-makes-humans-data-points.png
 alt: Datafication
 ---
