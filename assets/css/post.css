@@ -136,6 +136,15 @@ a.left2:hover {
 .img-post-second-section {
     width: 100%;
     border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .img-post-second-section {
+        height: auto;
+        object-fit: auto;
+    }
 }
 
 .btn {
@@ -167,6 +176,13 @@ a.left2:hover {
     font-size: 2.5em;
 }
 
+.row-2-hover:hover .img-post-second-section {
+    margin-top: -10px;
+    -webkit-transition: margin 0.3s ease-out;
+    -moz-transition: margin 0.3s ease-out;
+    -o-transition: margin 0.3s ease-out;
+}
+
 /* Flex box for posts */
 
 .flex-container {
@@ -181,7 +197,6 @@ a.left2:hover {
 /* Next and Previous post */
 
 .img-container1 {
-    text-align: center;
     max-width: 100%;
     max-height: 250px;
 }
@@ -193,15 +208,31 @@ a.left2:hover {
     opacity: 1;
 }
 
-.img-container1 img:hover {
+.img-container1:hover img {
     opacity: .6;
 }
 
-.img-container1 a {
+.img-container1 a, .img-container1 p {
     color: #fff;
 }
 
 .next-prev-img-col {
     padding: 0;
     margin: 0;
+}
+
+/* tags */
+
+.tag-p {
+    color: #2e3141;
+    display: inline-block;
+    border: 1px solid #2e3141;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.tag-p:hover {
+    background-color: #2e3141;
+    color: #fff;
 }

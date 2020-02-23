@@ -2,7 +2,7 @@
 layout: post
 title: "Client Side Form Validation In JavaScript"
 date: 2019-12-10
-categories: ['Javascript','Programming','Web Development','Technology']
+categories: ['JavaScript','Programming','Web Development','Technology']
 tags: ['First Post','Internships','Python','Programming']
 comments: true
 author: Benjamin Carlson

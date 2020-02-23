@@ -47,7 +47,7 @@ layout: blog-default
                     <p class="card-post-description">{{ post.description }}...</p>
                 </a>
                 <small class="card-post-author-date">Written by <a class="left left2" style="color: #2e3141"
-                        href="{{ site.baseurl }}/blog/authors/{{ post.author }}">{{ post.author }}</a> on
+                        href="{{ site.baseurl }}/blog/authors/{{ post.author }}"><strong>{{ post.author }}</strong></a> on
                     {{ post.date | date: '%B %d, %Y' }}</small>
             </div>
         </div>
@@ -63,7 +63,7 @@ layout: blog-default
     <div class="row">
         <div class="col-lg-9">
             {% for post in site.posts limit:3 offset:7 %}
-            <div class="row" data-aos="fade-up">
+            <div class="row row-2-hover" data-aos="fade-up">
                 <div class="col-md-4">
                     <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}{{ post.img }}" alt="{{ post.alt }}"
                             class="img-post-second-section"></a>
@@ -71,7 +71,7 @@ layout: blog-default
                 <div class="col-md-8">
                     {% for category in post.categories %}
                     <div class="category-container">
-                        <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories">
+                        <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">
                             <p>{{ category }}</p>
                         </a>
                     </div>
@@ -80,8 +80,8 @@ layout: blog-default
                         <h3 class="card-post-title">{{ post.title }}</h3>
                         <p class="card-post-description">{{ post.description }}...</p>
                     </a>
-                    <small class="card-post-author-date">Written by <a
-                            href="{{ site.baseurl }}/blog/authors/{{ post.author }}">{{ post.author }}</a> on
+                    <small class="card-post-author-date">Written by <a class="left left2" style="color: #2e3141"
+                            href="{{ site.baseurl }}/blog/authors/{{ post.author }}"><strong>{{ post.author }}</strong></a> on
                         {{ post.date | date: '%B %d, %Y' }}</small>
                 </div>
             </div>

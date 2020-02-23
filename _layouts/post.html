@@ -40,23 +40,47 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md next-prev-img-col">
-                {% if page.previous.url %}
-                <div class="img-container1">
-                    <img src="{{ page.previous.img }}" alt="{{ post.previous.alt }}">
-                    <a class="centered" href="{{ page.previous.url }}">&laquo; {{page.previous.title}}</a>
+
+        <div class="container">
+            {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/blog/start-here">
+                <p class="tag-p">{{ tag }}</p>
+            </a>
+            {% endfor %}
+            <h2 style="color: #2e3141">Written by <a style="color: #2e3141"
+                    href="{{ site.baseurl }}/blog/authors/{{ page.author }}">{% include post-meta.html author=page.author %}</a>
+            </h2>
+            <p style="max-width: 300px">Ben is a student at CCSU with a passion for coding and communicating ideas.</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg next-prev-img-col">
+            {% if page.previous.url %}
+            <div class="img-container1">
+                <img src="{{ page.previous.img }}" alt="{{ post.previous.alt }}">
+                <div class="centered" style="text-align: right">
+                    <a href="{{ page.previous.url }}">
+                        <p>Previous Post</p>
+                    </a>
+                    <a style="font-size: 1.7em" href="{{ page.previous.url }}">&laquo; {{page.previous.title}}</a>
                 </div>
-                {% endif %}
             </div>
-            <div class="col-md next-prev-img-col">
-                {% if page.next.url %}
-                <div class="img-container1">
-                    <img src="{{ page.next.img }}" alt="{{ post.next.alt }}">
-                    <a class="centered" href="{{ page.next.url }}">{{page.next.title}} &raquo;</a>
+            {% endif %}
+        </div>
+        <div class="col-lg next-prev-img-col">
+            {% if page.next.url %}
+            <div class="img-container1" style="text-align: left">
+                <img src="{{ page.next.img }}" alt="{{ post.next.alt }}">
+                <div class="centered">
+                    <a href="{{ page.next.url }}">
+                        <p>Next Post</p>
+                    </a>
+                    <a style="font-size: 1.7em" href="{{ page.next.url }}">{{page.next.title}} &raquo;</a>
                 </div>
-                {% endif %}
             </div>
+            {% endif %}
         </div>
     </div>
     {% include footer.html %}
