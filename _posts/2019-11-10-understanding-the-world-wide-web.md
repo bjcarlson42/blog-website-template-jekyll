@@ -9,6 +9,9 @@ author: Benjamin Carlson
 description: The World Wide Web, or more commonly known as the internet, is a way for billions of people to connect, share, and interact online. Most people think they understand how the internet works but it’s more complex than you may think
 img: /assets/img/posts/4-understanding-the-world-wide-web/understanding-the-world-wide-web.jpg
 alt: World Wide Web
+meta-description: 'The internet and the World Wide Web were invented a while ago by Sir Tim Berners-Lee and are one of the most important inventions of all time.'
+keywords: 'World Wide Web, internet, what is the internet, Sir Tim Berners-Lee'
+
 ---
 
 ## Introduction

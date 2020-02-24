@@ -9,6 +9,8 @@ author: Benjamin Carlson
 description: Whenever you are browsing the web, you are bound to come across some sort of form you need to input information into. You may be inputting credit card information to buy an item off Amazon, or inputting
 img: /assets/img/posts/7-client-side-form-validation/client-side-form-validation.jpeg
 alt: Javascript book
+meta-description:
+keywords:
 ---
 
 ## Introduction

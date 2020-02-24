@@ -9,6 +9,8 @@ author: Benjamin Carlson
 description: When I first started programming, it was hard to decide what technologies, languages, and tools to learn. There were so many different technologies out there and finding the right
 img: /assets/img/posts/8-what-coding-technology-should-you-learn/what-coding-technology-should-you-learn-2020.jpeg
 alt: Javascript book
+meta-description:
+keywords:
 ---
 
 ## Introduction

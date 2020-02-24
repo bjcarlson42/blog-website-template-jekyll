@@ -133,6 +133,18 @@ a.left2:hover {
     color: rgb(117, 117, 117);
 }
 
+.card-img-top {
+    transition: transform .5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.5);
+}
+
+.card-img-top-container {
+    overflow: hidden;
+}
+
 .img-post-second-section {
     width: 100%;
     border-radius: 10px;

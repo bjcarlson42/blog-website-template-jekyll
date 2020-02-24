@@ -9,6 +9,8 @@ author: Benjamin Carlson
 description: New year, new personal website. Whether you are a developer, freelancer, photographer, designer, or something else, having an online presence is important
 img: /assets/img/posts/9-how-to-craft-the-perfect-personal-website/how-to-craft-the-perfect-personal-website-in-2020.jpg
 alt: A personal website displayed on a phone
+meta-description:
+keywords:
 ---
 
 ## Introduction
