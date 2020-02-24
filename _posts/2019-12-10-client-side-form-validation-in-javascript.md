@@ -3,10 +3,10 @@ layout: post
 title: "Client Side Form Validation In JavaScript"
 date: 2019-12-10
 categories: ['JavaScript','Programming','Web Development','Technology']
-tags: ['First Post','Internships','Python','Programming']
+tags: ['html forms','validation','css','html']
 comments: true
 author: Benjamin Carlson
-description: Whenever you are browsing the web, you are bound to come across some sort of form you need to input information into. You may be inputting credit card information to buy an item off Amazon, or inputting...
+description: Whenever you are browsing the web, you are bound to come across some sort of form you need to input information into. You may be inputting credit card information to buy an item off Amazon, or inputting
 img: /assets/img/posts/7-client-side-form-validation/client-side-form-validation.jpeg
 alt: Javascript book
 ---

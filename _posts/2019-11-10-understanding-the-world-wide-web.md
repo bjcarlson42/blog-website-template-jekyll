@@ -6,7 +6,7 @@ categories: ['Programming','Web Development']
 tags: ['domain name servers','html','http','tim berners lee','uri','url','world wide web']
 comments: true
 author: Benjamin Carlson
-description: The World Wide Web, or more commonly known as the internet, is a way for billions of people to connect, share, and interact online. Most people think they understand how the internet works but it’s more complex than you may think...
+description: The World Wide Web, or more commonly known as the internet, is a way for billions of people to connect, share, and interact online. Most people think they understand how the internet works but it’s more complex than you may think
 img: /assets/img/posts/4-understanding-the-world-wide-web/understanding-the-world-wide-web.jpg
 alt: World Wide Web
 ---
