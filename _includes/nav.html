@@ -39,10 +39,39 @@
     .navbar-collapse li a {
         color: #2e3141 !important;
     }
+
+    a.left {
+        position: relative;
+    }
+
+    a.left:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a.left:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    a.left2:before {
+        background-color: #2e3141;
+    }
+
+    a.left2:hover {
+        color: #2e3141;
+    }
 </style>
 
 <nav class="navbar navbar-expand-xl navbar-light">
-    <a class="navbar-brand" href="{{ site.baseurl }}/blog">{{ site.title }}</a>
+    <a class="navbar-brand left left2" href="{{ site.baseurl }}/blog">{{ site.title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,38 +80,34 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/blog">Home</a>
+                <a class="nav-link left left2" href="{{ site.baseurl }}/blog">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link left left2" href="{{ site.baseurl }}/blog/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link left left2" href="{{ site.baseurl }}/blog/cheat-sheets">Cheat Sheets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link left left2" target="_blank" href="{{ site.baseurl }}/">My Site</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link left left2" href="{{ site.baseurl }}/blog/start-here"
+                    style="margin-right: 70px;">Start
+                    Here</a>
             </li>
             <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/blog/about" id="navbarDropdown"
-                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ site.baseurl }}/blog/about/contact">Contact</a>
-                    <a class="dropdown-item" href="{{ site.baseurl }}/blog/about/newsletter">Newsletter</a>
-                    <a class="dropdown-item" href="{{ site.baseurl }}/" target="_blank">My Site</a>
-                    <a class="dropdown-item" href="https://github.com/bjcarlson42" target="_blank">My Work</a>
-                </div>
-            </li> -->
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle left left2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Languages
+                    Programming Cheat Sheets
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Python</a>
-                    <a class="dropdown-item" href="#">HTML</a>
-                    <a class="dropdown-item" href="#">CSS</a>
-                    <a class="dropdown-item" href="#">JavaScript</a>
+                    <a class="dropdown-item left left2" href="#">Python</a>
+                    <a class="dropdown-item left left2" href="#">HTML</a>
+                    <a class="dropdown-item left left2" href="#">CSS</a>
+                    <a class="dropdown-item left left2" href="#">JavaScript</a>
                 </div>
             </li> -->
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/#about" target="_blank">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/blog/start-here" style="padding-right: 70px;">Start Here</a>
-            </li>
             <div class="links">
                 <ul>
                     <li><a href="https://twitter.com/bencarlsonblog" target="_blank"><i class="fa fa-twitter"></i></a>

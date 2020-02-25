@@ -1,56 +1,4 @@
-<style>
-    .container-sidebar {
-        position: relative;
-        text-align: center;
-        color: #2e3141;
-    }
-
-    .container-sidebar:hover p {
-        color: #fff;
-    }
-
-    .centered-sidebar {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 95%;
-        transform: translate(-50%, -50%);
-    }
-
-    .img-sidebar {
-        margin: 20px 0;
-        border-radius: 15px;
-        opacity: .4;
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        margin: 5px 0;
-        padding: 0;
-    }
-
-    @media screen and (max-width: 991px) {
-    .img-sidebar {
-        height: 300px;
-    }
-}
-
-    .container-sidebar:hover .img-sidebar {
-        opacity: 1;
-    }
-</style>
-
-<!-- <h4>Learn Tech The Right Way</h4>
-    <p>Subscribe to be notified of new posts, coding tips and tricks, and more.</p>
-    <p>Email:</p>
-    <input type="text" name="" id="">
-    <input type="submit" name="" id=""> -->
-<a style="color: darkgray" target="_blank" href="https://www.westgatereservations.com/9258829060/">
-    <p data-aos="fade-up" style="text-align: left;">Save big on a Westgate Vacation!</p>
-    <img data-aos="fade-up" src="{{ site.baseurl }}/assets/img/blog/westgate.jpg" alt="Westgate Vacation" style="max-width: 350px; display: block;
-        margin-left: auto; margin-right: auto;" width="100%" height="200px">
-</a>
-<p data-aos="fade-up" style="padding-top: 40px; text-align: left; color: darkgray;">Recently In:</p>
-{% for post in site.posts limit:3 %}
+<!-- {% for post in site.posts limit:3 %}
 <a href="{{ site.url }}{{ post.url }}">
     <div class="container-sidebar" data-aos="fade-up">
         <img class="img-sidebar" src="{{ post.img }}" alt="{{ post.alt }}">
@@ -60,7 +8,4 @@
         </div>
     </div>
 </a>
-{% endfor %}
-<div class="container">
-    {% include sidebar-ad.html %}
-</div>
+{% endfor %} -->

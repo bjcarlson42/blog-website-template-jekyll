@@ -1,4 +1,36 @@
+<style>
+    a.left {
+        position: relative;
+        color: #2e3141;
+    }
+
+    a.left:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a.left:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    a.left2:before {
+        background-color: #2e3141;
+    }
+
+    a.left2:hover {
+        color: #2e3141;
+    }
+</style>
+
 <div style="padding: 10px 0;">
     <hr>
-    <p style="text-align: center;">2019 - 2020 | Benjamin J. Carlson</p>
+    <p style="text-align: center;">2019 - 2020 | <a target="_blank" class="left left2" href="/"><strong>Benjamin J. Carlson</strong></a></p>
 </div>

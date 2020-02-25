@@ -28,11 +28,11 @@ layout: blog-default
 </div>
 {% endfor %}
 
-<div class="container">
+<div class="container-blog-home">
     <!-- First post section -->
     <div class="flex-container">
         {% for post in site.posts offset:1 limit:6 %}
-        <div class="card" style="width: 22rem; margin-top: -30px; margin-bottom: 35px;" data-aos="fade-up">
+        <div class="card" data-aos="fade-up">
             <a href="{{ site.url }}{{ post.url }}">
                 <div class="card-img-top-container">
                     <img class="card-img-top" src="{{ site.url }}{{ post.img }}" alt="{{ post.alt }}">
@@ -69,11 +69,11 @@ layout: blog-default
         <div class="col-md-8">
             {% for post in site.posts limit:5 offset:7 %}
             <div class="row row-2-hover" data-aos="fade-up">
-                <div class="col-md-4">
+                <div class="col-xl-4">
                     <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}{{ post.img }}" alt="{{ post.alt }}"
                             class="img-post-second-section"></a>
                 </div>
-                <div class="col-md-8">
+                <div class="col-xl-8">
                     {% for category in post.categories %}
                     <div class="category-container">
                         <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">

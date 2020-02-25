@@ -9,12 +9,14 @@ layout: blog-default
     <div class="flex-container">
         {% for post in site.posts %}
         <div class="card" style="width: 22rem; margin: 10px 0;" data-aos="fade-up">
-            <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="{{ site.url }}{{ post.img }}"
-                    alt="{{ post.alt }}"></a>
+            <div class="card-img-top-container">
+                <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="{{ site.url }}{{ post.img }}"
+                        alt="{{ post.alt }}"></a>
+            </div>
             <div class="card-body">
                 {% for category in post.categories %}
                 <div class="category-container">
-                    <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories">
+                    <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">
                         <p>{{ category }}</p>
                     </a>
                 </div>
@@ -23,8 +25,8 @@ layout: blog-default
                     <h3 class="card-post-title">{{ post.title }}</h3>
                     <p class="card-post-description">{{ post.description }}...</p>
                 </a>
-                <small class="card-post-author-date">Written by <a
-                        href="{{ site.baseurl }}/blog/authors/{{ post.author }}">{{ post.author }}</a> on
+                <small class="card-post-author-date">Written by <a class="left left2" style="color: #2e3141"
+                        href="{{ site.baseurl }}/blog/authors/{{ post.author }}"><strong>{{ post.author }}</strong></a> on
                     {{ post.date | date: '%B %d, %Y' }}</small>
             </div>
         </div>

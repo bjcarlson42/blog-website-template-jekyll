@@ -1,3 +1,14 @@
+/* General */
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.container-blog-home {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -100,10 +111,17 @@ a.left2:hover {
     font-size: 3em;
 }
 
+.card {
+    /* 22 */
+    width: 26rem;
+    margin-top: -30px;
+    margin-bottom: 35px;
+}
+
 .card-post-categories {
     float: left;
     text-align: left;
-    padding-right: 10px;
+    margin-right: 10px;
     color: #2e3141;
     font-size: .9em;
     font-weight: bold;
@@ -116,18 +134,18 @@ a.left2:hover {
 .card-post-title {
     text-align: left;
     float: left;
-    padding: 5px 0;
+    margin: 5px 0;
     color: #2e3141;
 }
 
 .card-post-author-date {
     float: left;
     text-align: left;
-    padding: 5px 0;
+    margin: 5px 0;
 }
 
 .card-post-description {
-    padding: 15px 0;
+    margin: 15px 0;
     text-align: left;
     float: left;
     color: rgb(117, 117, 117);
@@ -152,7 +170,7 @@ a.left2:hover {
     object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .img-post-second-section {
         height: auto;
         object-fit: auto;
@@ -202,15 +220,17 @@ a.left2:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: stretch; 
+    /* was flex start */
     align-content: flex-start;
 }
 
 /* Next and Previous post */
 
 .img-container1 {
-    max-width: 100%;
+    width: 100%;
     max-height: 250px;
+    background-color: #000;
 }
 
 .img-container1 img {
@@ -221,7 +241,7 @@ a.left2:hover {
 }
 
 .img-container1:hover img {
-    opacity: .6;
+    opacity: .4;
 }
 
 .img-container1 a, .img-container1 p {
@@ -239,9 +259,10 @@ a.left2:hover {
     color: #2e3141;
     display: inline-block;
     border: 1px solid #2e3141;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 50px;
+    padding: 2px 5px;
     margin-right: 5px;
+    margin-top: 50px;
 }
 
 .tag-p:hover {
