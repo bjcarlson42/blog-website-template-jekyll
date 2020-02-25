@@ -27,7 +27,7 @@ Before we do any programming at all, it is important that we go over some basic 
 
 ### IDE
 
-An **IDE** >or Integrated Development Environment, is where we will be writing all our code. Although it is technically possible to write code in a basic text editor, like notepad, IDE’s give you a better environment with more tools, plugins, and other helpful tools that allow you to code faster and more efficiently. In this tutorial, we will be using visual studio code, also known as VSCode. I will go into more detail on how to download VS Code and the advantages of using it later in this tutorial. 
+An **IDE** or Integrated Development Environment, is where we will be writing all our code. Although it is technically possible to write code in a basic text editor, like notepad, IDE’s give you a better environment with more tools, plugins, and other helpful tools that allow you to code faster and more efficiently. In this tutorial, we will be using visual studio code, also known as VSCode. I will go into more detail on how to download VS Code and the advantages of using it later in this tutorial. 
 
 The standard Python IDE is called IDLE. IDLE is not the best IDE and we will not be using it in this tutorial series because VS Code is 100 times better. If you would like to learn more about IDLE you can do so [here](https://docs.python.org/3/library/idle.html).
 
@@ -42,10 +42,20 @@ The Programming language **Python** is the language we will be using. This langu
 ## Downloading Python
 
 The first thing we need to do is download and install Python itself. To do this we need to go to [Python.org](https://www.python.org/downloads/).
+
 <span class="blog-post-imbedded-img">
-![]({{ site.url }}/assets/img/posts/2-python-tutorial-1/1.png) 
+![]({{ site.url }}/assets/img/posts/2-python-tutorial-1/1-min.jpg) 
 </span>
-Click the yellow button that says 'Download Python [version number]'. For me the version number is 3.7.4.<span style="font-weight: 400;"> I am using a mac so it says mac os x but if you are using windows it will be the windows download. </span> <span style="font-weight: 400;">After that simply follow the directions to install Python on your machine. </span> <span style="font-weight: 400;">Now you have Python installed on your machine but you need somewhere to write Python code. This is where Visual Studio Code comes in. Go to</span> [<span style="font-weight: 400;">https://code.visualstudio.com/download</span>](https://code.visualstudio.com/download)<span style="font-weight: 400;">. </span> <span style="font-weight: 400;">![VS Code](https://www.benjamincarlson.net/blog/wp-content/uploads/2019/10/2-1-300x205.png)</span> <span style="font-weight: 400;">Pick your operating system and click</span> _<span style="font-weight: 400;">download</span>_<span style="font-weight: 400;">. Your download will start and you can now open the application.
+
+Click the yellow button that says 'Download Python (version number)'. For me the version number is 3.7.4. I am using a mac so it says 'mac os x' but if you are using windows it will be the windows download. After that, simply follow the directions to install Python on your machine.
+
+Now you have Python installed on your machine. Next, we need an IDE to write Python code. This is where Visual Studio Code comes in. Go to [this link](https://code.visualstudio.com/download). 
+
+<span class="blog-post-imbedded-img">
+![]({{ site.url }}/assets/img/posts/2-python-tutorial-1/2-min.jpg) 
+</span>
+
+Pick your operating system and click download. Your download will start and you can now open the application.
 
 ## Python Basics
 
