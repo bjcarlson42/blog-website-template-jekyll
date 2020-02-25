@@ -21,9 +21,8 @@
 </div>
 
 <body>
-    <div class="container">
-        {% include nav.html %}
-    </div>
+
+    {% include nav.html %}
 
     <div class="img-container">
         {% include post-featured-image.html image=page.img alt=page.alt title=page.title categories=page.categories author=page.author date=page.date %}
@@ -51,7 +50,8 @@
                 <p style="color: #2e3141; font-size: 1.5em; margin-top: 50px;">Written by <a style="color: #2e3141"
                         href="{{ site.baseurl }}/blog/authors/{{ page.author }}">{% include post-meta.html author=page.author %}</a>
                 </p>
-                <p style="max-width: 300px">Ben is a student at CCSU with a passion for coding and communicating ideas.</p>
+                <p style="max-width: 300px">Ben is a student at CCSU with a passion for coding and communicating ideas.
+                </p>
             </div>
         </div>
     </div>
@@ -101,7 +101,7 @@
                 </a>
                 <div class="card-body">
                     {% for category in post.categories %}
-                    <div class="category-container"> 
+                    <div class="category-container">
                         <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">
                             <p>{{ category }}</p>
                         </a>

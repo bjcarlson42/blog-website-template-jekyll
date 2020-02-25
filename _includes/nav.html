@@ -68,35 +68,46 @@
     a.left2:hover {
         color: #2e3141;
     }
+
+    .nav-wrapper {
+        width: 80%;
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+
+    /* .active {
+        border: 2px solid #2e3141;
+    } */
 </style>
 
-<nav class="navbar navbar-expand-xl navbar-light">
-    <a class="navbar-brand left left2" href="{{ site.baseurl }}/blog">{{ site.title }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="nav-wrapper">
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <a class="navbar-brand left left2" href="{{ site.baseurl }}/blog">{{ site.title }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link left left2" href="{{ site.baseurl }}/blog">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link left left2" href="{{ site.baseurl }}/blog/about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link left left2" href="{{ site.baseurl }}/blog/cheat-sheets">Cheat Sheets</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link left left2" target="_blank" href="{{ site.baseurl }}/">My Site</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link left left2" href="{{ site.baseurl }}/blog/start-here"
-                    style="margin-right: 70px;">Start
-                    Here</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link left left2 active" href="{{ site.baseurl }}/blog">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link left left2" href="{{ site.baseurl }}/blog/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link left left2" href="{{ site.baseurl }}/blog/cheat-sheets">Cheat Sheets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link left left2" target="_blank" href="{{ site.baseurl }}/">My Site</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link left left2" href="{{ site.baseurl }}/blog/start-here"
+                        style="margin-right: 70px;">Start
+                        Here</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle left left2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Programming Cheat Sheets
@@ -108,24 +119,26 @@
                     <a class="dropdown-item left left2" href="#">JavaScript</a>
                 </div>
             </li> -->
-            <div class="links">
-                <ul>
-                    <li><a href="https://twitter.com/bencarlsonblog" target="_blank"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.pinterest.com/benjamincarlsonblog/" target="_blank"><i
-                                class="fa fa-pinterest-p"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/bjcarlson42" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li><a href="http://github.com/bjcarlson42" target="_blank"><i class="fa fa-github"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/bencarlsonblog/" target="_blank"><i
-                                class="fa fa-instagram"></i></a></li>
-                    <li><a href="mailto:bjcarlson42@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </ul>
-    </div>
-</nav>
+                <div class="links">
+                    <ul>
+                        <li><a href="https://twitter.com/bencarlsonblog" target="_blank"><i
+                                    class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.pinterest.com/benjamincarlsonblog/" target="_blank"><i
+                                    class="fa fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/bjcarlson42" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://github.com/bjcarlson42" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/bencarlsonblog/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="mailto:bjcarlson42@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</div>
