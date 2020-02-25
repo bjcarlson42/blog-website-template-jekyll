@@ -71,10 +71,12 @@ Pick your operating system and click download. Your download will start and you 
 
 ### Writing our First Line
 
-<span style="font-weight: 400;">At this point you should have a blank Python file. We will start by writing the following line of code:</span>
+At this point you should have a blank Python file. We will start by writing the following line of code:
 
-<pre class="theme:github toolbar:2 lang:default highlight:0 decode:true" title="First line of python code">print(‘Hello World!’)
-</pre>
+{% highlight python %}
+print(‘Hello World!
+{% endhighlight %}
+
 
 <span style="font-weight: 400;">You will notice a few things as you type this. One, the VS code highlights words in different colors. Also, VS Code auto completes and suggests words for you. These are 2 powerful things that good IDEs have. It makes it easier to write and read code.</span>
 
