@@ -4,3 +4,4 @@ email: bjcarlson42@gmail.com
 url: "https://benjamincarlson.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bencarlsonblog
 github_username:  bjcarlson42
+highlighter: rouge
