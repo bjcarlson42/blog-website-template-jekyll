@@ -227,7 +227,7 @@ a.left2:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: stretch; 
+    align-items: stretch;
     /* was flex start */
     align-content: flex-start;
 }
@@ -277,4 +277,20 @@ a.left2:hover {
     color: #fff;
 }
 
-/* About */
+.blog-post-imbedded-img img {
+    max-width: 750px;
+    height: 300px;
+    margin: 30px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 769px) {
+    .blog-post-imbedded-img img {
+        width: 90%;
+        height: auto;
+        object-position: contain;
+    }
+}
