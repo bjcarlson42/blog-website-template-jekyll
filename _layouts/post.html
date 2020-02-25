@@ -35,7 +35,9 @@
                 {{ content }}
             </div>
             <div class="col-lg-3">
-                {% include sidebar.html %}
+                <div class="fixed-col">
+                    {% include sidebar.html %}
+                </div>
             </div>
         </div>
 
@@ -122,4 +124,28 @@
     </div>
     {% include footer.html %}
     {% include footer-files.html %}
+
+
+    <!-- <script>    
+    $(function () {
+
+            var $sidebar = $(".fixed-col"),
+                $window = $(window),
+                offset = $sidebar.offset(),
+                topPadding = 15;
+
+            $window.scroll(function () {
+                if ($window.scrollTop() > offset.top) {
+                    $sidebar.stop().animate({
+                        marginTop: $window.scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $sidebar.stop().animate({
+                        marginTop: 0
+                    });
+                }
+            });
+
+        });
+    </script> -->
 </body>
