@@ -63,7 +63,7 @@ Pick your operating system and click download. Your download will start and you 
 
 ### Writing Python Code
 
-<span style="font-weight: 400;">Now we will start actually coding in Python. First open visual studio code. You should see a screen like this. </span> [![VS Code startup](https://www.benjamincarlson.net/blog/wp-content/uploads/2019/10/3-1-300x188.png)](https://computersciencecentral.dev/wp-content/uploads/2019/10/3.png)
+Now we will start actually coding in Python. First open visual studio code. You should see a screen like this. </span> [![VS Code startup](https://www.benjamincarlson.net/blog/wp-content/uploads/2019/10/3-1-300x188.png)](https://computersciencecentral.dev/wp-content/uploads/2019/10/3.png)
 
 ### Making our First Python File
 
@@ -74,7 +74,7 @@ Pick your operating system and click download. Your download will start and you 
 At this point you should have a blank Python file. We will start by writing the following line of code:
 
 {% highlight python %}
-print(‘Hello World!
+print(‘Hello World!)
 {% endhighlight %}
 
 
