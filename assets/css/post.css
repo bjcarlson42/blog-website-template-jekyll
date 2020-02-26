@@ -367,6 +367,6 @@ blockquote p {
     padding: 5px;
 } */
 
-.row-nex-prev-posts {
-    width: 100%;
+.row-next-prev-posts {
+    max-width: 100%;
 }

@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <div class="row row-nex-prev-posts">
+    <div class="row-next-prev-posts">
         <div class="col-lg next-prev-img-col">
             {% if page.previous.url %}
             <a href="{{ page.previous.url }}">
@@ -118,28 +118,4 @@
     </div>
     {% include footer.html %}
     {% include footer-files.html %}
-
-
-    <!-- <script>    
-    $(function () {
-
-            var $sidebar = $(".fixed-col"),
-                $window = $(window),
-                offset = $sidebar.offset(),
-                topPadding = 15;
-
-            $window.scroll(function () {
-                if ($window.scrollTop() > offset.top) {
-                    $sidebar.stop().animate({
-                        marginTop: $window.scrollTop() - offset.top + topPadding
-                    });
-                } else {
-                    $sidebar.stop().animate({
-                        marginTop: 0
-                    });
-                }
-            });
-
-        });
-    </script> -->
 </body>
