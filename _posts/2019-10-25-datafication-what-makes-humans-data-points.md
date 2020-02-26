@@ -25,7 +25,7 @@ Datafication can be defined as a technological trend turning many aspects of our
 The “Internet of things”(IoT) is the driving force behind datafication. The IoT includes billions of devices all around us that are connected to the internet, collecting and sharing billions and billions of data. The list of devices that are part of the IoT is constantly growing and includes some of the following including, smart TV’s, smart watches, phones, and many many more. Using the IoT we can convert all sorts of things into a data format. Some examples of this are monitoring a parking spot, monitoring a person’s health, or monitoring a person’s streaming habits. 
 
 <span class="blog-post-imbedded-img">
-![]({{ site.url }}/assets/img/posts/3-datafication-what-makes-humans-data-points/iot.jpg) 
+![]({{ site.url }}/assets/img/posts/3-datafication-what-makes-humans-data-points/IoT.jpg) 
 </span>
 
 Social media is another great example. Twitter “datafyes” our thoughts and LinkedIn “datafyes” our professional accomplishments. All of this new data that is being collected can be used to make new insights with unprecedented value. This is a simple explanation of the IoT. If you want me to make a separate post on the IoT, leave a comment on this post!
