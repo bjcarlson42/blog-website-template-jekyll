@@ -366,3 +366,7 @@ blockquote p {
     text-align: left;
     padding: 5px;
 } */
+
+.row-nex-prev-posts {
+    width: 100%;
+}

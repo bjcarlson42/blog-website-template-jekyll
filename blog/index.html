@@ -21,8 +21,8 @@ layout: blog-default
         <a class="a-main-post-title" href="{{ site.url }}/{{ post.url }}">
             <h2 data-aos="fade-up" data-aos-delay="400" style="color: #fff">{{ post.title }}</h2>
         </a>
-        <a data-aos="fade-up" data-aos-delay="600" href="{{ site.url }}{{ post.url }}"><button class="btn btn-primary">Read Article <i
-                    class="fa fa-arrow-right"></i></button></a>
+        <a data-aos="fade-up" data-aos-delay="600" href="{{ site.url }}{{ post.url }}"><button
+                class="btn btn-primary">Read Article <i class="fa fa-arrow-right"></i></button></a>
     </div>
 </div>
 {% endfor %}
@@ -59,9 +59,7 @@ layout: blog-default
     </div>
 
     <!-- Ad -->
-    <div class="container">
-        {% include home-ad.html %}
-    </div>
+    {% include home-ad.html %}
 
     <!-- Second post section -->
     <div class="row">
