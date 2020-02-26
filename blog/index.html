@@ -4,8 +4,7 @@ layout: blog-default
 
 <head>
     <!-- meta tags -->
-    <meta name="description"
-        content="Benjamin Carlson - A Computer Science Blog is a technology blog website for Benjamin Carlson. I post articles on current news, 
+    <meta name="description" content="Benjamin Carlson - A Computer Science Blog is a technology blog website for Benjamin Carlson. I post articles on current news, 
         learn python tutorials, and much more on various computer science concepts.">
     <meta name="keywords" content="computer science blog, learn python, technology blog">
 </head>
@@ -15,14 +14,14 @@ layout: blog-default
 <div class="img-container">
     <img class="img-slider" src="{{ post.img }}" alt="{{ post.alt }}">
     <div class="bottom-left container">
-        <p>By <strong><a class="left" style="color: #fff"
+        <p data-aos="fade-up" data-aos-delay="200">By <strong><a class="left" style="color: #fff"
                     href="{{ site.baseurl }}/blog/authors/{{ post.author }}">{{ post.author }}</a></strong> in
             <strong><a style="color: #fff" href="{{ site.baseurl }}/blog/start-here"
                     class="left">{{ post.categories[0] }}</a></strong></p>
         <a class="a-main-post-title" href="{{ site.url }}/{{ post.url }}">
-            <h2 style="color: #fff">{{ post.title }}</h2>
+            <h2 data-aos="fade-up" data-aos-delay="400" style="color: #fff">{{ post.title }}</h2>
         </a>
-        <a href="{{ site.url }}/{{ post.url }}"><button class="btn btn-primary">Read Article <i
+        <a data-aos="fade-up" data-aos-delay="600" href="{{ site.url }}{{ post.url }}"><button class="btn btn-primary">Read Article <i
                     class="fa fa-arrow-right"></i></button></a>
     </div>
 </div>

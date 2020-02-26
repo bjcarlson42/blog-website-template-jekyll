@@ -24,16 +24,20 @@ Datafication can be defined as a technological trend turning many aspects of our
 ## What is the Internet of Things?
 The “Internet of things”(IoT) is the driving force behind datafication. The IoT includes billions of devices all around us that are connected to the internet, collecting and sharing billions and billions of data. The list of devices that are part of the IoT is constantly growing and includes some of the following including, smart TV’s, smart watches, phones, and many many more. Using the IoT we can convert all sorts of things into a data format. Some examples of this are monitoring a parking spot, monitoring a person’s health, or monitoring a person’s streaming habits. 
 
-Social media is another great example. Twitter “datafyes” our thoughts and linkedIn “datafyes” our professional accomplishments. All of this new data that is being collected can be used to make new insights with unprecedented value. This is a simple explanation of the IoT. If you want me to make a separate post on the IoT, leave a comment on this post!
+<span class="blog-post-imbedded-img">
+![]({{ site.url }}/assets/img/posts/3-datafication-what-makes-humans-data-points/iot.jpg) 
+</span>
+
+Social media is another great example. Twitter “datafyes” our thoughts and LinkedIn “datafyes” our professional accomplishments. All of this new data that is being collected can be used to make new insights with unprecedented value. This is a simple explanation of the IoT. If you want me to make a separate post on the IoT, leave a comment on this post!
 
 ## Advantages
 All this datafication leads to several advantages in our lives. 
 
 1. One advantage is with advertisements. The more a site like google or instagram knows about a person and their buying or viewing habits, the more ads can be given that relate to that specific user. This can lead to the user having a better experience browsing the web. A good example of this is from an excerpt I found in an article about datafication titled “What’s really behind the big data hype” by Bernard Marr. In this quote, we see how Walmart is using datafication to collect all sorts of data from its customers and how it uses that information. If this doesn’t show you how powerful datafication is, I’m not sure what will.  
 
-> "Wal-Mart is able to take data from your past buying patterns, their internal stock information, your mobile phone location data, social media as well as external weather information and analyse all of this in seconds so it can send you a voucher for a BBQ cleaner to your phone– but only if you own a barbeque, the weather is nice and you currently are within a 3 miles radius of a Wal-Mart store that has the BBQ cleaner in stock." 
-
 2. Another advantage of datafication is simply having so much data. With all this new data, companies need to hire more people that are skilled enough to analyze this data therefore creating new job titles and openings. One job in particular is a data scientist. A data scientist is described by the Oxford dictionary “as a person employed to analyze and interpret complex digital data, such as the usage statistics of a website, especially in order to assist a business in its decision-making.”
+
+> Wal-Mart is able to take data from your past buying patterns, their internal stock information, your mobile phone location data, social media as well as external weather information and analyse all of this in seconds so it can send you a voucher for a BBQ cleaner to your phone– but only if you own a barbeque, the weather is nice and you currently are within a 3 miles radius of a Wal-Mart store that has the BBQ cleaner in stock. 
 
 ## Disadvantages
 Of course there are also disadvantages when talking about datafication.

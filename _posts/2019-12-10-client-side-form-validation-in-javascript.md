@@ -9,8 +9,8 @@ author: Benjamin Carlson
 description: Whenever you are browsing the web, you are bound to come across some sort of form you need to input information into. You may be inputting credit card information to buy an item off Amazon, or inputting
 img: /assets/img/posts/7-client-side-form-validation/client-side-form-validation.jpeg
 alt: Javascript book
-meta-description:
-keywords:
+meta-description: 'In this tutorial we will learn how to code an html form and validate it with javascript.'
+keywords: 'bootstrap navigation, javascript tutorial, website navigation, html form'
 ---
 
 ## Introduction
@@ -18,21 +18,23 @@ Whenever you are browsing the web, you are bound to come across some sort of for
 
 {% include under-p1-ad.html %}
 
-There are two ways to do this. It can be verified by the server (server side verification) or it can be verified right as the user enters the information in the form (client side validation). In this post, I will go over how to use JavaScript to perform client side verification to verify information entered into a HTML form. As always, the code can be found on my [GitHub](https://github.com/bjcarlson42/blog-website-code/tree/master/JavaScript%20Form%20Validation).
+There are two ways to do this. It can be verified by the server (server side verification) or it can be verified right as the user enters the information in the form (client side validation). In this post, I will go over how to use JavaScript to perform client side verification to verify information entered into a HTML form. As always, the code can be found on my [GitHub](https://github.com/bjcarlson42/blog-website-code/tree/master/JavaScript%20Form%20Validation){:target="_blank"}.
 
 ## Setting Up
 
-The first step is to write some HTML code. We need to use the form tag along with some input tags to gather all of the information. Take a look at the code below where I am creating an index.html file with a basic [HTML form](https://www.w3schools.com/html/html_forms.asp).
+The first step is to write some HTML code. We need to use the form tag along with some input tags to gather all of the information. Take a look at the code below where I am creating an index.html file with a basic [HTML form](https://www.w3schools.com/html/html_forms.asp){:target="_blank"}.
 
-<pre class="theme:github lang:xhtml mark:6 decode:true"><html>
+<div class="shadow">
+{% highlight html %}
+<html>
+
 <head>
     <title>JavaScript Form Validation</title>
 </head>
+
 <body>
     <form action="response.html" medhod="post" onsubmit="return validateForm()">
-
         <table width="450px" style="background-color: lightgray">
-
             <tr>
                 <td valign="top">
                     <label for="first_name" id="lblFirstName">First Name *</label>
@@ -41,7 +43,6 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     <input type="text" name="first_name" id="firstName" maxlength="50" size="30">
                 </td>
             </tr>
-
             <tr>
                 <td valign="top">
                     <label for="last_name" id="lblLastName">Last Name *</label>
@@ -50,7 +51,6 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     <input type="text" name="last_name" id="lastName" maxlength="50" size="30">
                 </td>
             </tr>
-
             <tr>
                 <td valign="top">
                     <label for="email" id="lblEmail">Email Address *</label>
@@ -59,7 +59,6 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     <input type="text" name="email" id="emailAddress" maxlength="80" size="30">
                 </td>
             </tr>
-
             <tr>
                 <td valign="top">
                     <label for="telephone" id="lblTelephone">Telephone Number *</label>
@@ -68,7 +67,6 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     <input type="text" name="telephone" id="telephoneNumber" maxlength="30" size="30">
                 </td>
             </tr>
-
             <tr>
                 <td valign="top">
                     <br>
@@ -83,7 +81,6 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     </select>
                 </td>
             </tr>
-
             <tr>
                 <td valign="top">
                     <br>
@@ -97,7 +94,6 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     <input type="radio" name="size" value="Large" checked> Large<br>
                 </td>
             </tr>
-
             <tr>
                 <td valign="top">
                     <br>
@@ -111,7 +107,6 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     <input type="radio" name="color" value="Blue"> Blue<br>
                 </td>
             </tr>
-
             <tr>
                 <td valign="top">
                     <br>
@@ -122,13 +117,11 @@ The first step is to write some HTML code. We need to use the form tag along wit
                     <textarea name="comments" id="comments" maxlength="1000" cols="25" rows="6"></textarea>
                 </td>
             </tr>
-
             <tr>
                 <td colspan="2" style="text-align:center">
                     <input type="submit" value="Submit">
                 </td>
             </tr>
-
             <tr>
                 <td colspan="2" style="text-align:center">
                     <p id="msg" style="font-weight: bold; color: red;"></p>
@@ -138,13 +131,16 @@ The first step is to write some HTML code. We need to use the form tag along wit
         </table>
     </form>
 </body>
-</html></pre>
+
+</html>
+{% endhighlight %}
+</div>
 
 This is a lot of HTML code but it is fairly simple. It consists of the following elements:
 
-1.  A standard html, head, and body tag.
-2.  Inside the body tag there is a form tag which holds all of the input fields.
-3.  Inside the form there is a table tag. This is used for the layout. If you don't know much about html tables you can read up on it [here](https://www.geeksforgeeks.org/html-tables/).
+1.  A standard html, head, and body tag
+2.  Inside the body tag there is a form tag which holds all of the input fields
+3.  Inside the form there is a table tag. This is used for the layout. If you don't know much about html tables you can read up on it [here](https://www.geeksforgeeks.org/html-tables/){:target="_blank"}
 
 Inside the table, there are a few different tags, but the important one is the input tag. This is where we are getting the actual user input from. Additionally, on line 6, we see 3 important parameters.
 
@@ -162,26 +158,36 @@ They are as follows:
 
 Next, we need to validate the form. If you try to hit submit now, it will "work" (you will get an error saying cannot get response.html but the form went through. For completeness, you can create a file names response.html and simply write "It worked!"). I am writing "worked" in parentheses because we were able to get past the form successfully. It did not, however, validate the input in any way. To do that, we need to use JavaScript. To do this, insert the following tag underneath the first body tag:
 
-<pre class="theme:github lang:js decode:true ">//code above
+<div class="shadow">
+{% highlight html %}
+//code above
 
 <body>
     <script>
     //JavaScript Validation will go here.
     </script>
 
-//code below</pre>
+//code below
+{% endhighlight %}
+</div>
 
 Now, we must add the JavaScript. The first step is to declare a function. We will name this function "validateForm".
 
-<pre class="theme:github lang:js mark:2-4 decode:true "><script>
+<div class="shadow">
+{% highlight javascript %}
+<script>
         function validateForm() {
 
         }
-    </script></pre>
+</script>
+{% endhighlight %}
+</div>
 
 Next, we need to make a variable for each of the users input. In this case, we have 5 places where the user can enter text data, so we need 5 variables.
 
-<pre class="theme:github lang:js mark:3-7 decode:true"><script>
+<div class="shadow">
+{% highlight javascript %}
+<script>
         function validateForm() {
             inFirstName = document.getElementById("firstName").value
             inLastName = document.getElementById("lastName").value
@@ -190,21 +196,31 @@ Next, we need to make a variable for each of the users input. In this case, we h
             inComments = document.getElementById("comments").value
             result = true
         }
-    </script></pre>
+</script>
+{% endhighlight %}
+</div>
 
 Now we will add some logic. If the user enters nothing, we want to give them an error. We show this in JavaScript by writing the following line:
 
-<pre class="theme:github lang:js decode:true ">if (inFirstName == "") {
+<div class="shadow">
+{% highlight javascript %}
+if (inFirstName == "") {
                 document.getElementById("lblFirstName").style.backgroundColor = "red"
                 result = false
             } else { 
                 document.getElementById("lblFirstName").style.backgroundColor = "lightgrey"
                 result = true
-            }</pre>
+            }
+{% endhighlight %}
+</div>
 
-This says, if the variable called "inFirstName" is empty (the user entered nothing), then turn the background color red and set the result to false. If that is true, the else statement is executed. This turns the background color back to its original color and sets the result to true (important if the result was originally false). The result is the result of the function. If the overall function executes as true, it will allow the user to submit the form. Look back at the 4th code block. Here, we set the function to true so we assume that the user has entered all of the correct information. If the user enters nothing, the result will be set to false. We can now repeat this for the remaining input fields.
+This says, if the variable called *"inFirstName"* is empty (the user entered nothing), then turn the background color red and set the result to false. If that is true, the else statement is executed. This turns the background color back to its original color and sets the result to true (important if the result was originally false). 
 
-<pre class="theme:github lang:js decode:true ">if(inLastName == "") {
+The result is the result of the function. If the overall function executes as true, it will allow the user to submit the form. Look back at the 4th code block. There, we set the function to true so we assume that the user has entered all of the correct information. If the user enters nothing, the result will be set to false. We can now repeat this for the remaining input fields.
+
+<div class="shadow">
+{% highlight javascript %}
+if(inLastName == "") {
         document.getElementById("lblLastName").style.backgroundColor="red"
         result = false
       }else {
@@ -234,25 +250,35 @@ This says, if the variable called "inFirstName" is empty (the user entered nothi
       }else {
         document.getElementById("lblComments").style.backgroundColor = "lightgrey"
         result = true
-      }</pre>
+      }
+{% endhighlight %}
+</div>
 
 Lastly, we will return the result.
 
-<pre class="theme:github lang:js decode:true "> return result</pre>
+<div class="shadow">
+{% highlight javascript %}
+return result
+{% endhighlight %}
+</div>
 
-Note: Remember that the entire code can be found on my [GitHub](https://github.com/bjcarlson42/blog-website-code/tree/master/JavaScript%20Form%20Validation).
+Note: Remember that the entire code can be found on my [GitHub](https://github.com/bjcarlson42/blog-website-code/tree/master/JavaScript%20Form%20Validation){:target="_blank"}.
 
 ### Adding a Helpful Message
 
 We are done, but there is one more touch we can add. If you look back to the first code snippet, you will notice a paragraph tag at the bottom with the id "msg". This can be used to display a message if the function returns false. We can add the code:
 
-<pre class="theme:github lang:js decode:true">if (!result) {
+<div class="shadow">
+{% highlight javascript %}
+if (!result) {
                 document.getElementById("msg").innerHTML = "Please enter valid data in highlighted fields."
                 result = false
-             }</pre>
+             }
+{% endhighlight %}
+</div>
 
 This will give the user a message when the fields are not entered.
 
 ## Conclusion
 
-And with that, we are done. Please visit my [GitHub repo](https://github.com/bjcarlson42/blog-website-code/tree/master/JavaScript%20Form%20Validation) for the completed code for this post and other posts. There is still more that we can do, like adding regular expressions or HTML validation to make sure the input entered is correct. For example, if we want a phone number entered, we don't want text to be allowed through. If you would like to see a tutorial like this in the future, leave a comment on this post and I'll make a separate post on it! Good luck and happy coding!
+And with that, we are done. Please visit my [GitHub repo](https://github.com/bjcarlson42/blog-website-code/tree/master/JavaScript%20Form%20Validation){:target="_blank"} for the completed code for this post and other posts. There is still more that we can do, like adding regular expressions or HTML validation to make sure the input entered is correct. For example, if we want a phone number entered, we don't want text to be allowed through. If you would like to see a tutorial like this in the future, leave a comment on this post and I'll make a separate post on it! Good luck and happy coding!

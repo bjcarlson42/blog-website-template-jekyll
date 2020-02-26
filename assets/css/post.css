@@ -295,3 +295,74 @@ a.left2:hover {
         object-position: contain;
     }
 }
+
+/* highlight */
+
+.highlight {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 5px 5px 5px;
+}
+
+#actual-content-text p {
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+#actual-content-text a {
+    position: relative;
+    font-weight: normal;
+    color: blue;
+}
+
+#actual-content-text a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2e3141;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#actual-content-text a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+#actual-content-text a::before {
+    background-color: #2e3141;
+}
+
+#actual-content-text a:hover {
+    color: #2e3141;
+}
+
+blockquote {
+    background: #fff;
+    border-left: 10px solid #2e3141;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #2e3141;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+table, table tr, table td, table th {
+    border: 1px solid #2e3141;
+    text-align: left;
+    padding: 5px;
+}
