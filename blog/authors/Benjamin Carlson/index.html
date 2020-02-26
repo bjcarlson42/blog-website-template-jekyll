@@ -1,5 +1,7 @@
 ---
 layout: blog-default
+meta-description: 'These are all the blog posts written by Benjamin Carlson for Benjamin Carlson - A Computer Science Blog'
+meta-keywords: 'Benjamin Carlson blog, computer science blog, all blog posts'
 ---
 
 <div class="container">
@@ -26,7 +28,8 @@ layout: blog-default
                     <p class="card-post-description">{{ post.description }}...</p>
                 </a>
                 <small class="card-post-author-date">Written by <a class="left left2" style="color: #2e3141"
-                        href="{{ site.baseurl }}/blog/authors/{{ post.author }}"><strong>{{ post.author }}</strong></a> on
+                        href="{{ site.baseurl }}/blog/authors/{{ post.author }}"><strong>{{ post.author }}</strong></a>
+                    on
                     {{ post.date | date: '%B %d, %Y' }}</small>
             </div>
         </div>

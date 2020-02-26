@@ -6,9 +6,9 @@
     {% include header.html %}
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
-    <!-- Unique post meta -->
-    <meta name="description" content=" {% include post-meta.html meta-description=page.meta-description %}">
-    <meta name="keywords" content="{% include post-meta.html keywords=page.keywords %}">
+    <!-- meta tags -->
+    <meta name="description" content="{{ page.meta-description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
 </head>
 
 <body>
