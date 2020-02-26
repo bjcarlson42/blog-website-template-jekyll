@@ -169,13 +169,17 @@ print('I don\'t want to use double quotations.')
 
 In the above example, we can use a backslash in front of the ' in don't. This tells the compiler that this is not a normal single quotation. If you run the code you will find that the first line doesn't work but the second line, with the escape character does. Here is a list of some escape sequences:
 
-| Escape Sequence | Meaning |
+1. \t = tab
+2. \" = single quote
+3. \'' = double quote
+
+<!-- | Escape Sequence | Meaning |
 |---|---|
 | \newline | Ignored |
 | \\\ | Backslash |
 | \\' | Single Quote |
 | \\'' | Double Quote |
-| \t | Tab |
+| \t | Tab | -->
 
 For a list of more escape sequences, see the [official Python documentation](https://docs.python.org/2.0/ref/strings.html){:target="_blank"}.
 

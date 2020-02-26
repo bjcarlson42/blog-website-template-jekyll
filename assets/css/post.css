@@ -361,8 +361,8 @@ blockquote p {
     display: inline;
 }
 
-table, table tr, table td, table th {
+/* .table, table tr, table td, table th {
     border: 1px solid #2e3141;
     text-align: left;
     padding: 5px;
-}
+} */
