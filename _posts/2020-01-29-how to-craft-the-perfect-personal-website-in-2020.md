@@ -9,8 +9,8 @@ author: Benjamin Carlson
 description: New year, new personal website. Whether you are a developer, freelancer, photographer, designer, or something else, having an online presence is important
 img: /assets/img/posts/9-how-to-craft-the-perfect-personal-website/how-to-craft-the-perfect-personal-website-in-2020.jpg
 alt: A personal website displayed on a phone
-meta-description:
-keywords:
+meta-description: 'In this post, I will go over the most important parts to include in your personal webiste.'
+keywords: 'personal webiste, personal brand, how to make a website'
 ---
 
 ## Introduction
@@ -20,11 +20,29 @@ New year, new personal website. Whether you are a developer, freelancer, photogr
 
 ## Parts to Include
 
-<span style="font-weight: 400;">There are a lot of parts you should include in your website. Here are some of the most important parts. Keep in mind that these are in no specific order at all. </span>
+There are a lot of parts you should include in your website. Here are some of the most important parts. Keep in mind that these are in no specific order at all.
 
 ### Captivating Landing Page
 
-<span style="font-weight: 400;">The first thing your visitor sees on your website is the landing page.</span> <span style="font-weight: 400;">Here are some important things you should include on your landing page.</span> The first may seem obvious - your name. It may seem silly to even put this but I can't tell you how many personal websites I find where I have to scroll to see the name of the individual who owns the website. Your name is the most important aspect of a personal brand so make sure you don't forget to put your name. <span style="font-weight: 400;">Second, you need to tell the user who you are and what you do.</span> <span style="font-weight: 400;">If you are a freelance photographer, they should know that just by looking at your landing page. Similarly to your name, the user should not have to search for what you do.</span> <span style="font-weight: 400;">Third, you should give the user a way to contact you. This can be done in a few ways on the landing page. The first way you can achieve this is by using social media links. This is what [I did with my website](https://benjamincarlson.net/resume-site.html). Without scrolling at all, you can get to my Instagram, Twitter, view my resume, send me an email, and more.  </span> Lastly, make it look nice. The purpose of a landing page is to get the user excited to see more. To achieve this, you should really focus on the design of your landing page. Take a look at my landing page below.   [![landing page personal website](https://www.benjamincarlson.net/blog/wp-content/uploads/2020/01/Screen-Shot-2020-01-28-at-9.56.30-PM-1-1024x516.png)](https://www.benjamincarlson.net/blog/wp-content/uploads/2020/01/Screen-Shot-2020-01-28-at-9.56.30-PM-1.png) As you can see in the image above, all four things I mentioned above are incorporated. I used a minimalistic design but that is just one way to do it!
+The first thing your visitor sees on your website is the landing page. Here are some important things you should include on your landing page. The first may seem obvious - your name. 
+
+#### Name
+It may seem silly to even put this but I can't tell you how many personal websites I find where I have to scroll to see the name of the individual who owns the website. Your name is the most important aspect of a personal brand so make sure you don't forget to put your name. 
+
+#### Occupation
+Second, you need to tell the user who you are and what you do. If you are a freelance photographer, they should know that just by looking at your landing page. Similarly to your name, the user should not have to search for what you do.
+
+#### Able To Contact
+Third, you should give the user a way to contact you. This can be done in a few ways on the landing page. The first way you can achieve this is by using social media links. This is what [I did with my website](https://benjamincarlson.net/). Without scrolling at all, you can get to my Instagram, Twitter, view my resume, send me an email, and more.  
+
+#### Appealing
+Lastly, make it look nice. The purpose of a landing page is to get the user excited to see more. To achieve this, you should really focus on the design of your landing page. Take a look at my landing page below.
+
+<span class="blog-post-imbedded-img">
+![]({{ site.url }}/assets/img/posts/9-how-to-craft-the-perfect-personal-website/landing-page-min.jpg)
+</span>
+
+As you can see in the image above, all four things I mentioned above are incorporated. I used a minimalistic design but that is just one way to do it!
 
 ### Personal Blog
 
