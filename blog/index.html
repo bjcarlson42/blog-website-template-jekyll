@@ -1,6 +1,7 @@
 ---
 layout: blog-default
-meta-description: 'Benjamin Carlson - A Computer Science Blog is a technology blog website for Benjamin Carlson. I post articles on current news,
+meta-description: 'Benjamin Carlson - A Computer Science Blog is a technology blog website for Benjamin Carlson. I post
+articles on current news,
 learn python tutorials, and much more on various computer science concepts'
 meta-keywords: 'computer science blog, learn python, technology blog'
 ---
@@ -23,16 +24,15 @@ meta-keywords: 'computer science blog, learn python, technology blog'
 </div>
 {% endfor %}
 
-<div class="container-blog-home">
-    <!-- First post section -->
+<!-- First post section -->
+<div class="container">
     <div class="flex-container">
-        {% for post in site.posts offset:1 limit:6 %}
-        <div class="card" data-aos="fade-up">
-            <a href="{{ site.url }}{{ post.url }}">
-                <div class="card-img-top-container">
-                    <img class="card-img-top" src="{{ site.url }}{{ post.img }}" alt="{{ post.alt }}">
-                </div>
-            </a>
+        {% for post in site.posts limit:6 offset:1 %}
+        <div class="card" style="width: 22rem; margin: -40px 0 70px 0;" data-aos="fade-up">
+            <div class="card-img-top-container">
+                <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="{{ site.url }}{{ post.img }}"
+                        alt="{{ post.alt }}"></a>
+            </div>
             <div class="card-body">
                 {% for category in post.categories %}
                 <div class="category-container">
@@ -53,6 +53,9 @@ meta-keywords: 'computer science blog, learn python, technology blog'
         </div>
         {% endfor %}
     </div>
+</div>
+
+<div class="container-blog-home">
 
     <!-- Ad -->
     <div style="margin: 0, auto; display: block;">
@@ -93,5 +96,3 @@ meta-keywords: 'computer science blog, learn python, technology blog'
         </div>
     </div>
 </div>
-
-{% include footer-files.html %}
