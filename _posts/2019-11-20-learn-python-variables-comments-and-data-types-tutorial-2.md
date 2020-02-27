@@ -10,7 +10,7 @@ description: Welcome back to the second post in the learn Python series! If you 
 img: /assets/img/posts/5-python-tutorial-2/python-tutorial-2.jpg
 alt: Python Programming
 meta-description: 'In this second Python tutorial you will learn variables, comments, data types and more beginner Python concepts.'
-keywords: 'learn python, python tutorial, beginner python'
+keywords: 'Learn,Python,Tutorial,Interactive,Free'
 ---
 
 ## Introduction
