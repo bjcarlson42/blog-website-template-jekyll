@@ -20,6 +20,11 @@
         font-size: 20px;
     }
 
+    .links ul li:hover {
+        transition: 0.7s;
+        transform: rotateX(360deg);
+    }
+
     .links ul li a {
         color: #2e3141;
     }
@@ -75,6 +80,21 @@
         margin: 0 auto;
     }
 
+    .navbar-brand img {
+        width: 30;
+        height: 30;
+    }
+
+    @media screen and (max-width: 426px) {
+    .brand-hide {
+        display: none !important;
+    }
+    .navbar-brand img {
+        width: 50;
+        height: 50;
+    }
+}
+
     /* .active {
         border: 2px solid #2e3141;
     } */
@@ -83,7 +103,7 @@
 <div class="nav-wrapper">
     <nav class="navbar navbar-expand-xl navbar-light">
         <a class="navbar-brand left left2" href="{{ site.baseurl }}/blog">
-            <img src="{{ site.baseurl }}/assets/img/favicon.jpg" width="30" height="30" class="d-inline-block align-top" alt="">{{ site.title }}</a>
+            <img src="{{ site.baseurl }}/assets/img/favicon.jpg" class="d-inline-block align-top" alt=""><span class="brand-hide"> {{ site.title }}</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

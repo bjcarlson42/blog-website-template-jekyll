@@ -3,6 +3,8 @@ permalink: /404.html
 layout: default
 ---
 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
+
 <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
@@ -21,6 +23,33 @@ layout: default
   <h1>404</h1>
 
   <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-  <p>Go back <a href="{{ site.baseurl }}/">home</a>.</p>
+  <p>We couldn't find the page you are looking for. Go back <a class="left left2" href="{{ site.baseurl }}/">home</a> or check out my recent posts below!</p>
+  
+  <div class="flex-container">
+    {% for post in site.posts limit:6 offset:1 %}
+    <div class="card" style="width: 22rem; margin-top: 50px;" data-aos="fade-up">
+      <div class="card-img-top-container">
+        <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="{{ site.url }}{{ post.img }}"
+            alt="{{ post.alt }}"></a>
+      </div>
+      <div class="card-body">
+        {% for category in post.categories %}
+        <div class="category-container">
+          <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">
+            <p>{{ category }}</p>
+          </a>
+        </div>
+        {% endfor %}
+        <a href="{{ site.url }}{{ post.url }}">
+          <h3 class="card-post-title">{{ post.title }}</h3>
+          <p class="card-post-description">{{ post.description }}...</p>
+        </a>
+        <small class="card-post-author-date">Written by <a class="left left2" style="color: #2e3141"
+            href="{{ site.baseurl }}/blog/authors/{{ post.author }}"><strong>{{ post.author }}</strong></a>
+          on
+          {{ post.date | date: '%B %d, %Y' }}</small>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
