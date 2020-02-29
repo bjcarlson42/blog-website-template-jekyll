@@ -17,6 +17,8 @@ alt: Rubik's cube
 
 The Rubiks cube is a popular puzzle in which the goal is to solve a 3x3 cube by matching the colors on each side. In order to solve the cube, you first need to scramble it. There are rules for how to do this but in general a scramble consists of 20 random moves performend in sequence. In this post I will show you how to implement a scramble in JavaScript.
 
+As always, the complete code for this tutorial can be found on my [GitHub](https://github.com/bjcarlson42/blog-website-code/blob/master/Rubik's%20Cube%20JavaScript%20Scrambler/main.js){:target="_blank"}.
+
 {% include under-p1-ad.html %}
 
 ## Rubiks Cube Termonology
