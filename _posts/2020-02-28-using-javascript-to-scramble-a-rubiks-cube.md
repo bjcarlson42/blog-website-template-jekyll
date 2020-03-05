@@ -6,7 +6,7 @@ categories: ['JavaScript','Tutorial','Rubiks Cube']
 tags: ['rubiks cube','push','pop','arrays','javascript math library']
 author: Benjamin Carlson
 comments: true
-description:
+description:The Rubiks cube is a popular puzzle in which the goal is to solve a 3x3 cube by matching the colors on each side. In order to solve the cube, you first need to scramble it. There are rules for how to do this but in general
 meta-description: In this tutorial, we will use JavaScript arrays and the push opperation to generate a Rubik's cube scramble.
 keywords: 'rubiks cube, rubiks cube scramble, beginner javascript, how to solve a rubiks cube'
 img: /assets/img/posts/10-rubiks-cube/rubiks-cube.jpg
