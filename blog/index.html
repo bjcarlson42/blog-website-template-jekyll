@@ -13,7 +13,7 @@ meta-keywords: 'computer science blog, learn python, technology blog'
     <div class="bottom-left container">
         <p data-aos="fade-up" data-aos-delay="200">By <strong><a class="left" style="color: #fff"
                     href="{{ site.baseurl }}/blog/authors/{{ post.author }}">{{ post.author }}</a></strong> in
-            <strong><a style="color: #fff" href="{{ site.baseurl }}/blog/start-here"
+            <strong><a style="color: #fff" href="/blog/categories/{{ post.categories[0] | downcase | url_escape | strip | replace: ' ', '-' }}"
                     class="left">{{ post.categories[0] }}</a></strong></p>
         <a class="a-main-post-title" href="{{ site.url }}/{{ post.url }}">
             <h2 data-aos="fade-up" data-aos-delay="400" style="color: #fff">{{ post.title }}</h2>
@@ -36,7 +36,7 @@ meta-keywords: 'computer science blog, learn python, technology blog'
             <div class="card-body">
                 {% for category in post.categories %}
                 <div class="category-container">
-                    <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">
+                    <a href="/blog/categories/{{ category | downcase | url_escape | strip | replace: ' ', '-' }}" class="card-post-categories left left2">
                         <p>{{ category }}</p>
                     </a>
                 </div>
@@ -64,7 +64,7 @@ meta-keywords: 'computer science blog, learn python, technology blog'
 
     <!-- Second post section -->
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg-8">
             {% for post in site.posts limit:5 offset:7 %}
             <div class="row row-2-hover" data-aos="fade-up">
                 <div class="col-xl-4">
@@ -74,7 +74,7 @@ meta-keywords: 'computer science blog, learn python, technology blog'
                 <div class="col-xl-8">
                     {% for category in post.categories %}
                     <div class="category-container">
-                        <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">
+                        <a href="/blog/categories/{{ category | downcase | url_escape | strip | replace: ' ', '-' }}" class="card-post-categories left left2">
                             <p>{{ category }}</p>
                         </a>
                     </div>
@@ -91,7 +91,7 @@ meta-keywords: 'computer science blog, learn python, technology blog'
             </div>
             {% endfor %}
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 sidebar-hide">
             {% include sidebar.html %}
         </div>
     </div>

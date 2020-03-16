@@ -1,45 +1,84 @@
 <style>
-    ul li {
-        list-style: none;
+    .westgate-img-container {
+        height: 200px;
+        width: 100%;
+    }
+
+    .sidebar-hide {
+        padding: 0;
+        margin: 0;
+    }
+
+    .westgate-text {
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .westgate-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+    .bens-favorites-p {
+        color: #2e3141;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: bold;
+    }
+
+    .img-container-sidebar-main {
+        width: 100%;
+        height: 200px;
         margin: 10px 0;
     }
 
-    ul li p {
-        color: #2e3141;
+    .img-container-sidebar-secondary {
+        width: 100%;
+        height: 125px;
+        margin: 10px 0;
     }
 
-    ul li a:hover {
-        color: #2e3141;
+    .img-sidebar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
     }
 </style>
 
-<div class="container">
+<div class="container sidebar-hide">
     <!-- Westgate Vacation -->
-    <div class="row">
-        <a style="color: darkgray" target="_blank" href="https://www.westgatereservations.com/9258829060/">
-            <p data-aos="fade-up" style="text-align: left; padding-top: 5px;">Save big on a Westgate Vacation!</p>
-            <img data-aos="fade-up" src="{{ site.baseurl }}/assets/img/blog/westgate.jpg" alt="Westgate Vacation" style="max-width: 350px; display: block;
-            margin-left: auto; margin-right: auto;" width="100%" height="200px">
+    <a style="color: #2e3141" target="_blank" href="https://www.westgatereservations.com/9258829060/">
+        <p class="westgate-text" data-aos="fade-up">Save big on a Westgate Vacation!</p>
+        <div class="westgate-img-container">
+            <img class="westgate-img" data-aos="fade-up" src="{{ site.baseurl }}/assets/img/blog/westgate.jpg"
+                alt="Westgate Vacation" width="100%" height="100%">
+        </div>
+    </a>
+
+    <div data-aos="fade-up">
+        {% include sidebar-ad.html %}
+    </div>
+
+    <!-- Ben's Favorites -->
+    <p class="bens-favorites-p" data-aos="fade-up">Ben's Favorites</p>
+    {% for post in site.posts limit: 1 %}
+    <p style="font-weight: bold;" data-aos="fade-up">{{ post.title }}</p>
+    <a href="{{ site.url }}{{ post.url }}"></a>
+    <div data-aos="fade-up" class="img-container-sidebar-main">
+        <a href="{{ site.url }}{{ post.url }}">
+            <img class="img-sidebar" src="{{ site.url }}{{ post.img }}" alt="">
         </a>
     </div>
-    <!-- Share -->
-    <div class="row">
-        {% include share-page.html %}
+    {% endfor %}
+    {% for post in site.posts limit: 2 offset : 1 %}
+    <p style="font-weight: bold;" data-aos="fade-up">{{ post.title }}</p>
+    <div data-aos="fade-up" class="img-container-sidebar-secondary">
+        <a href="{{ site.url }}{{ post.url }}">
+            <img class="img-sidebar" src="{{ site.url }}{{ post.img }}" alt="">
+        </a>
     </div>
-    <!-- Recent Posts -->
-    <div class="row">
-        <p data-aos="fade-up" style="padding-top: 40px; text-align: left; color: darkgray;">Recently In:</p>
-        <ul>
-            {% for post in site.posts limit:3 %}
-            <li>
-                <a href="{{ post.url }}">
-                    <img height="50px" width="50px" src="{{ post.img }}" alt="{{ post.alt }}">
-                    <p>{{ post.title }}</p>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+    {% endfor %}
 </div>
-<!-- Sidebar Ad -->
-{% include sidebar-ad.html %}

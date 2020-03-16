@@ -80,8 +80,12 @@ a.left2:hover {
 
 #navbar {
     background-color: #fff !important;
-    border-bottom: #2e3141 1px solid;
     z-index: 1;
+}
+
+.border-bottom {
+    border-bottom: #2e3141 1px solid !important;
+    z-index: 1 !important;
 }
 
 .sticky {
@@ -604,6 +608,10 @@ a.left2:hover {
     -o-background-size: cover;
     background-size: cover;
     box-shadow: 0 3000px rgba(255, 255, 255, 0.4) inset;
+}
+
+.div1-projects:hover, .div2-projects:hover, .div3-projects:hover, .div4-projects:hover {
+    box-shadow: none;
 }
 
 .div1-projects:hover, .div2-projects:hover, .div3-projects:hover, .div4-projects:hover {

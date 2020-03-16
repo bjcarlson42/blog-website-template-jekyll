@@ -25,8 +25,14 @@
         transform: rotateX(360deg);
     }
 
+    /* before */
     .links ul li a {
-        color: #2e3141;
+        color: #fff !important;
+    }
+
+    /* after */
+    .links-after ul li a {
+        color: #2e3141 !important;
     }
 
     .links ul li a:hover {
@@ -86,24 +92,22 @@
     }
 
     @media screen and (max-width: 426px) {
-    .brand-hide {
-        display: none !important;
-    }
-    .navbar-brand img {
-        width: 50;
-        height: 50;
-    }
-}
+        .brand-hide {
+            display: none !important;
+        }
 
-    /* .active {
-        border: 2px solid #2e3141;
-    } */
+        .navbar-brand img {
+            width: 50;
+            height: 50;
+        }
+    }
 </style>
 
 <div class="nav-wrapper">
-    <nav class="navbar navbar-expand-xl navbar-light">
+    <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
         <a class="navbar-brand left left2" href="{{ site.baseurl }}/blog">
-            <img src="{{ site.baseurl }}/assets/img/favicon.jpg" class="d-inline-block align-top" alt=""><span class="brand-hide"> {{ site.title }}</span></a>
+            <img src="{{ site.baseurl }}/assets/img/favicon.jpg" class="d-inline-block align-top" alt=""><span
+                class="brand-hide"> {{ site.title }}</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -140,7 +144,7 @@
                     <a class="dropdown-item left left2" href="#">JavaScript</a>
                 </div>
             </li> -->
-                <div class="links">
+                <div class="links links-after">
                     <ul>
                         <li><a href="https://twitter.com/bencarlsonblog" target="_blank"><i
                                     class="fa fa-twitter"></i></a>

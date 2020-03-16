@@ -10,10 +10,14 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
+    // make sticky
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
+        navbar.classList.add("border-bottom")
+
     } else {
-        navbar.classList.remove("sticky");
+        navbar.classList.remove("sticky")
+        navbar.classList.remove("border-bottom")
     }
 }
 

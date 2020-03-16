@@ -26,10 +26,8 @@
             <div class="col-lg-9" id="actual-content-text">
                 {{ content }}
             </div>
-            <div class="col-lg-3">
-                <div class="fixed-col">
-                    {% include blog-sidebar.html %}
-                </div>
+            <div class="col-lg-3 hide-blog-sidebar">
+                {% include sidebar.html %}
             </div>
         </div>
 
@@ -85,10 +83,15 @@
     </div>
 
     <div class="container">
-        <p style="margin-top: 30px; font-size: 1.5em;">You Might Also Like</p>
+        <p style="margin-top: 30px; font-size: 1.5em;">You Might Also Like:</p>
         <div class="row">
+            {% for post in page.tags limit:3 %}
+
+            {% endfor %}
+
+
             {% for post in site.posts limit:3 %}
-            <div class="card" style="width: 22rem; margin: 0 auto;" data-aos="fade-up">
+            <div class="card" style="width: 22rem; margin: 0 auto; margin-bottom: 10px;" data-aos="fade-up">
                 <a href="{{ site.url }}{{ post.url }}">
                     <div class="card-img-top-container">
                         <img class="card-img-top" src="{{ site.url }}{{ post.img }}" alt="{{ post.alt }}">

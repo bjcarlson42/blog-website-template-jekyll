@@ -304,7 +304,7 @@ a.left2:hover {
 #actual-content-text a {
     position: relative;
     font-weight: normal;
-    color: blue;
+    color: darkkhaki;
 }
 
 #actual-content-text a::before {
@@ -361,4 +361,12 @@ blockquote p {
 
 .row-next-prev-posts {
     max-width: 100%;
+}
+
+/* Hide sidebar on smaller screens */
+
+@media screen and (max-width: 1199px) {
+    .hide-blog-sidebar {
+        display: none;
+    }
 }

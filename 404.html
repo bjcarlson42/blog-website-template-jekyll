@@ -10,46 +10,56 @@ layout: default
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
+    margin-top: 100px;
   }
+
+  @media screen and (max-width: 426px) {
+    .container {
+      margin-top: 0;
+    }
+  }
+
   h1 {
     margin: 30px 0;
     font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  .category-p {
+        color: #2e3141;
+        display: inline-block;
+        border: 1px solid #2e3141;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    .category-p:hover {
+        background-color: #2e3141;
+        border: 1px solid #fff;
+        color: #fff;
+    }
 </style>
 
 <div class="container">
   <h1>404</h1>
-
   <p><strong>Page not found :(</strong></p>
-  <p>We couldn't find the page you are looking for. Go back <a class="left left2" href="{{ site.baseurl }}/">home</a> or check out my recent posts below!</p>
-  
-  <div class="flex-container">
-    {% for post in site.posts limit:6 offset:1 %}
-    <div class="card" style="width: 22rem; margin-top: 50px;" data-aos="fade-up">
-      <div class="card-img-top-container">
-        <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="{{ site.url }}{{ post.img }}"
-            alt="{{ post.alt }}"></a>
-      </div>
-      <div class="card-body">
-        {% for category in post.categories %}
-        <div class="category-container">
-          <a href="{{ site.baseurl }}/blog/start-here" class="card-post-categories left left2">
-            <p>{{ category }}</p>
-          </a>
-        </div>
-        {% endfor %}
-        <a href="{{ site.url }}{{ post.url }}">
-          <h3 class="card-post-title">{{ post.title }}</h3>
-          <p class="card-post-description">{{ post.description }}...</p>
-        </a>
-        <small class="card-post-author-date">Written by <a class="left left2" style="color: #2e3141"
-            href="{{ site.baseurl }}/blog/authors/{{ post.author }}"><strong>{{ post.author }}</strong></a>
-          on
-          {{ post.date | date: '%B %d, %Y' }}</small>
-      </div>
-    </div>
+  <p>I couldn't find the page you are looking for. Go back <a class="left left2" href="/blog">home</a> or explore some
+    categories below!</p>
+    {% assign categories_list = site.categories %}
+    {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+    <a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}
+      ({{ site.tags[category].size }})</a>
     {% endfor %}
-  </div>
+    {% else %}
+    {% for category in categories_list %}
+    <a href="/blog/categories/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">
+      <p class="category-p">{{ category[0] | camelcase }} ({{ category[1].size }})</p>
+    </a>
+    {% endfor %}
+    {% endif %}
+    <hr>
+    {% assign categories_list = nil %}
 </div>
