@@ -10,10 +10,6 @@ body {
     font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 a {
     color: #2e3141;
     font-weight: bold;
