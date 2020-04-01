@@ -1,7 +1,13 @@
 /* General */
 
+html {
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -277,6 +283,7 @@ a.left2:hover {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 769px) {
@@ -288,85 +295,63 @@ a.left2:hover {
     }
 }
 
-/* highlight */
 
-.highlight {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 15px 5px 5px 5px;
+/* new stuff */
+
+.blog-post-container {
+    max-width: 750px;
+    margin: auto;
+    padding: 10px;
 }
 
-#actual-content-text p {
-    font-size: 1.2em;
-    padding: 5px 0;
+.blog-post-container h2 {
+    font-size: 34px;
+    margin-top: 1.95em;
+    font-weight: 600;
+    margin-bottom: -0.28em;
+    letter-spacing: -0.022em;
+    line-height: 1.12;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.84);
 }
 
-#actual-content-text a {
-    position: relative;
-    font-weight: normal;
-    color: darkkhaki;
+.blog-post-container h3 {
+    font-size: 30px;
+    margin-top: 1.95em;
+    font-weight: 600;
+    margin-bottom: -0.28em;
+    letter-spacing: -0.022em;
+    line-height: 1.12;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.84);
 }
 
-#actual-content-text a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #2e3141;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
+.blog-post-container h3 {
+    font-size: 30px;
+    margin-top: 1.95em;
+    font-weight: 600;
+    margin-bottom: -0.28em;
+    letter-spacing: -0.022em;
+    line-height: 1.12;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.84);
 }
 
-#actual-content-text a:hover::before {
-    visibility: visible;
-    width: 100%;
+.blog-post-container p {
+    margin-top: 0.86em;
+    font-size: 21px;
+    margin-bottom: -0.46em;
+    letter-spacing: -0.004em;
+    line-height: 1.58;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.84);
+    font-weight: 400;
 }
 
-#actual-content-text a::before {
-    background-color: #2e3141;
-}
+/* nav padding for blog-default.html */
 
-#actual-content-text a:hover {
-    color: #2e3141;
-}
-
-blockquote {
-    background: #fff;
-    border-left: 10px solid #2e3141;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-}
-
-blockquote:before {
-    color: #2e3141;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-}
-
-blockquote p {
-    display: inline;
-}
-
-/* .table, table tr, table td, table th {
-    border: 1px solid #2e3141;
-    text-align: left;
-    padding: 5px;
-} */
-
-.row-next-prev-posts {
-    max-width: 100%;
-}
-
-/* Hide sidebar on smaller screens */
-
-@media screen and (max-width: 1199px) {
-    .hide-blog-sidebar {
-        display: none;
-    }
+.padding-for-nav {
+    padding-top: 100px;
 }

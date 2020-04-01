@@ -20,30 +20,22 @@
         {% include post-featured-image.html image=page.img alt=page.alt title=page.title categories=page.categories author=page.author date=page.date %}
     </div>
 
-    <div class="container">
-
+    <div class="blog-post-container">
         <div class="row">
-            <div class="col-lg-9" id="actual-content-text">
-                {{ content }}
-            </div>
-            <div class="col-lg-3 hide-blog-sidebar">
-                {% include sidebar.html %}
-            </div>
+            {{ content }}
         </div>
-
-
         <div class="row">
             <div class="container">
                 <hr>
-                {% for tag in page.tags %}
+                <!-- {% for tag in page.tags %}
                 <a href="{{ site.baseurl }}/blog/start-here">
                     <p class="tag-p">{{ tag }}</p>
                 </a>
-                {% endfor %}
+                {% endfor %} -->
                 <p style="color: #2e3141; font-size: 1.5em; margin-top: 50px;">Written by <a style="color: #2e3141"
                         href="{{ site.baseurl }}/blog/authors/{{ page.author }}">{% include post-meta.html author=page.author %}</a>
                 </p>
-                <p style="max-width: 300px">Ben is a student at CCSU with a passion for coding and communicating ideas.
+                <p style="max-width: 300px; margin-bottom: 10px;">Ben is a student at CCSU with a passion for coding and communicating ideas.
                 </p>
             </div>
         </div>
@@ -85,12 +77,8 @@
     <div class="container">
         <p style="margin-top: 30px; font-size: 1.5em;">You Might Also Like:</p>
         <div class="row">
-            {% for post in page.tags limit:3 %}
-
-            {% endfor %}
-
-
-            {% for post in site.posts limit:3 %}
+            {% for category in site.categories limit:3 %}
+            {% for post in category[1] limit:3 %}
             <div class="card" style="width: 22rem; margin: 0 auto; margin-bottom: 10px;" data-aos="fade-up">
                 <a href="{{ site.url }}{{ post.url }}">
                     <div class="card-img-top-container">
@@ -115,6 +103,7 @@
                         {{ post.date | date: '%B %d, %Y' }}</small>
                 </div>
             </div>
+            {% endfor %}
             {% endfor %}
         </div>
     </div>

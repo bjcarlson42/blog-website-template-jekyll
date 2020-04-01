@@ -8,14 +8,14 @@ meta-keywords: 'computer science blog, learn python, technology blog'
 
 <!-- Slider -->
 {% for post in site.posts limit:1 %}
-<div class="img-container">
+<div class="img-container" style="margin-top: -100;">
     <img class="img-slider" src="{{ post.img }}" alt="{{ post.alt }}">
     <div class="bottom-left container">
         <p data-aos="fade-up" data-aos-delay="200">By <strong><a class="left" style="color: #fff"
                     href="{{ site.baseurl }}/blog/authors/{{ post.author }}">{{ post.author }}</a></strong> in
             <strong><a style="color: #fff" href="/blog/categories/{{ post.categories[0] | downcase | url_escape | strip | replace: ' ', '-' }}"
                     class="left">{{ post.categories[0] }}</a></strong></p>
-        <a class="a-main-post-title" href="{{ site.url }}/{{ post.url }}">
+        <a class="a-main-post-title" href="{{ site.url }}{{ post.url }}">
             <h2 data-aos="fade-up" data-aos-delay="400" style="color: #fff">{{ post.title }}</h2>
         </a>
         <a data-aos="fade-up" data-aos-delay="600" href="{{ site.url }}{{ post.url }}"><button
@@ -24,7 +24,7 @@ meta-keywords: 'computer science blog, learn python, technology blog'
 </div>
 {% endfor %}
 
-<!-- First post section -->
+First post section
 <div class="container">
     <div class="flex-container">
         {% for post in site.posts limit:6 offset:1 %}
