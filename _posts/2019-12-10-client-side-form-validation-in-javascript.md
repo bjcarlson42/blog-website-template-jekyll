@@ -3,7 +3,6 @@ layout: post
 title: "Client Side Form Validation In JavaScript"
 date: 2019-12-10
 categories: ['JavaScript','Programming','Web Development','Technology']
-tags: ['html forms','validation','css','html']
 comments: true
 author: Benjamin Carlson
 description: Whenever you are browsing the web, you are bound to come across some sort of form you need to input information into. You may be inputting credit card information to buy an item off Amazon, or inputting
@@ -24,8 +23,9 @@ There are two ways to do this. It can be verified by the server (server side ver
 
 The first step is to write some HTML code. We need to use the form tag along with some input tags to gather all of the information. Take a look at the code below where I am creating an index.html file with a basic [HTML form](https://www.w3schools.com/html/html_forms.asp){:target="_blank"}.
 
-<div class="shadow">
-{% highlight html %}
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight html %}
 <html>
 
 <head>
@@ -134,10 +134,12 @@ The first step is to write some HTML code. We need to use the form tag along wit
 
 </html>
 {% endhighlight %}
-</div>
+    </span>
+</pre>
 
 This is a lot of HTML code but it is fairly simple. It consists of the following elements:
 
+<span class="ccc">
 1.  A standard html, head, and body tag
 2.  Inside the body tag there is a form tag which holds all of the input fields
 3.  Inside the form there is a table tag. This is used for the layout. If you don't know much about html tables you can read up on it [here](https://www.geeksforgeeks.org/html-tables/){:target="_blank"}
@@ -148,6 +150,7 @@ Inside the table, there are a few different tags, but the important one is the i
 
 They are as follows:
 
+<span class="ccc">
 1.  action = "response.html"
 2.  method = "post"
 3.  onsubmit = "return validateForm()"
@@ -158,36 +161,41 @@ They are as follows:
 
 Next, we need to validate the form. If you try to hit submit now, it will "work" (you will get an error saying cannot get response.html but the form went through. For completeness, you can create a file names response.html and simply write "It worked!"). I am writing "worked" in parentheses because we were able to get past the form successfully. It did not, however, validate the input in any way. To do that, we need to use JavaScript. To do this, insert the following tag underneath the first body tag:
 
-<div class="shadow">
-{% highlight html %}
-//code above
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight html %}
+    //code above
 
-<body>
-    <script>
-    //JavaScript Validation will go here.
-    </script>
+    <body>
+        <script>
+        //JavaScript Validation will go here.
+        </script>
 
-//code below
-{% endhighlight %}
-</div>
+    //code below
+    {% endhighlight %}
+    </span>
+</pre>
 
 Now, we must add the JavaScript. The first step is to declare a function. We will name this function "validateForm".
 
-<div class="shadow">
-{% highlight javascript %}
-<script>
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight javascript %}
+    <script>
         function validateForm() {
 
         }
-</script>
-{% endhighlight %}
-</div>
+    </script>
+    {% endhighlight %}
+    </span>
+</pre>
 
 Next, we need to make a variable for each of the users input. In this case, we have 5 places where the user can enter text data, so we need 5 variables.
 
-<div class="shadow">
-{% highlight javascript %}
-<script>
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight javascript %}
+    <script>
         function validateForm() {
             inFirstName = document.getElementById("firstName").value
             inLastName = document.getElementById("lastName").value
@@ -196,31 +204,35 @@ Next, we need to make a variable for each of the users input. In this case, we h
             inComments = document.getElementById("comments").value
             result = true
         }
-</script>
+    </script>
 {% endhighlight %}
-</div>
+    </span>
+</pre>
 
 Now we will add some logic. If the user enters nothing, we want to give them an error. We show this in JavaScript by writing the following line:
 
-<div class="shadow">
-{% highlight javascript %}
-if (inFirstName == "") {
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight javascript %}
+    if (inFirstName == "") {
                 document.getElementById("lblFirstName").style.backgroundColor = "red"
                 result = false
             } else { 
                 document.getElementById("lblFirstName").style.backgroundColor = "lightgrey"
                 result = true
             }
-{% endhighlight %}
-</div>
+    {% endhighlight %}
+    </span>
+</pre>
 
 This says, if the variable called *"inFirstName"* is empty (the user entered nothing), then turn the background color red and set the result to false. If that is true, the else statement is executed. This turns the background color back to its original color and sets the result to true (important if the result was originally false). 
 
 The result is the result of the function. If the overall function executes as true, it will allow the user to submit the form. Look back at the 4th code block. There, we set the function to true so we assume that the user has entered all of the correct information. If the user enters nothing, the result will be set to false. We can now repeat this for the remaining input fields.
 
-<div class="shadow">
-{% highlight javascript %}
-if(inLastName == "") {
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight javascript %}
+    if(inLastName == "") {
         document.getElementById("lblLastName").style.backgroundColor="red"
         result = false
       }else {
@@ -251,16 +263,19 @@ if(inLastName == "") {
         document.getElementById("lblComments").style.backgroundColor = "lightgrey"
         result = true
       }
-{% endhighlight %}
-</div>
+    {% endhighlight %}
+    </span>
+</pre>
 
 Lastly, we will return the result.
 
-<div class="shadow">
-{% highlight javascript %}
-return result
-{% endhighlight %}
-</div>
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight javascript %}
+    return result
+    {% endhighlight %}
+  </span>
+</pre>
 
 Note: Remember that the entire code can be found on my [GitHub](https://github.com/bjcarlson42/blog-website-code/tree/master/JavaScript%20Form%20Validation){:target="_blank"}.
 
@@ -268,14 +283,16 @@ Note: Remember that the entire code can be found on my [GitHub](https://github.c
 
 We are done, but there is one more touch we can add. If you look back to the first code snippet, you will notice a paragraph tag at the bottom with the id "msg". This can be used to display a message if the function returns false. We can add the code:
 
-<div class="shadow">
-{% highlight javascript %}
-if (!result) {
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    {% highlight javascript %}
+    if (!result) {
                 document.getElementById("msg").innerHTML = "Please enter valid data in highlighted fields."
                 result = false
              }
-{% endhighlight %}
-</div>
+    {% endhighlight %}
+ </span>
+</pre>
 
 This will give the user a message when the fields are not entered.
 

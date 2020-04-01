@@ -3,7 +3,6 @@ layout: post
 title: "Why You Need To Be Able To Code: And A Little About Me"
 date: 2019-10-08
 categories: ['My Life']
-tags: ['first post','internships','programming','python']
 comments: true
 author: Benjamin Carlson
 description: Hello and welcome to this website! It has always been a dream of mine to share things I am passionate about with the

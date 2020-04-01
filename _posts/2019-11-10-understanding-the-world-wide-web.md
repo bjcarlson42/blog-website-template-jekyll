@@ -3,7 +3,6 @@ layout: post
 title: "Understanding The World Wide Web"
 date: 2019-11-10
 categories: ['Programming','Web Development']
-tags: ['domain name servers','html','http','tim berners lee','uri','url','world wide web']
 comments: true
 author: Benjamin Carlson
 description: The World Wide Web, or more commonly known as the internet, is a way for billions of people to connect, share, and interact online. Most people think they understand how the internet works but it’s more complex than you may think
@@ -27,6 +26,8 @@ Sir Tim Berners-Lee is credited with inventing the world wide web in 1989. A Bri
 While working there, he noticed that information stored on computers was very difficult to share, especially because at that time, information was different across different computers. By combining the power of the internet, Sir Tim Berners-Lee realized that computers could share information by exploiting an emerging technology called hypertext. He proposed this idea in an academic paper titled “Information Management: A Proposal. From here, Sir Tim Berners-Lee went on to create the three main technologies that to this day allow us to use the world wide web. 
 
 There are three important technical things that make up the web. They are as follows:
+
+<span class="ccc">
 1. HTML
 2. URI
 3. HTTP
@@ -42,6 +43,7 @@ A fun trick you can do when you are using Google Chrome is to right click and hi
 
 Every web page has these tags:
 
+<span class="ccc">
 - **HTML**: HTML lets the browser know that an html page must be rendered. This tag encompasses all the content on the page.
 - **Head**:The head tag is very important as it includes the title of the website, links to external files including CSS (the styling), and a bunch of metadata including the description and search terms. This is very important for search engine optimization (SEO) and will be talked about in a later post. 
 - **Body**: This encompasses all the main html markup on the page. Paragraphs, images, headings, and much more can go in here.

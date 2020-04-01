@@ -3,7 +3,6 @@ layout: post
 title: "Learn Python Basics: Tutorial 1"
 date: 2019-10-17
 categories: ['Programming', 'Python', 'Tutorial']
-tags: ['basics','ide','practice','programming language']
 comments: true
 author: Benjamin Carlson
 description: Welcome back to the second post. Because this is the first tutorial, there is a lot of set up that we need to do before we can even start programming in Python
@@ -63,6 +62,7 @@ Pick your operating system and click download. Your download will start and you 
 
 At this point you should have:
 
+<span class="ccc">
 1. A basic understanding of Python, IDE's, and programming languages 
 2. Python installed on your machine
 3. Visual Studio Code installed on your machine. 
@@ -91,11 +91,11 @@ You might get some messages saying something along the lines of you don’t have
 
 At this point you should have a blank Python file. We will start by writing the following line of code:
 
-<div class="shadow">
-{% highlight python %}
-print(‘Hello World!)
-{% endhighlight %}
-</div>
+<pre class="ir is it iu iv lh li fg">
+    <span class="lj jl ap bh lk b by ll lm r ln">
+    print(‘Hello World!)
+    </span>
+</pre>
 
 You will notice a few things as you type this. One, the VS code highlights words in different colors. Also, VS Code auto completes and suggests words for you. These are 2 powerful things that good IDEs have. It makes it easier to write and read code.
 
@@ -137,6 +137,7 @@ As you can see, we get the output, “Hello World!”. With that, this first Pyt
 
 To really test what you learned in this tutorial, I will be giving you practice problems that you can do to test your knowledge and get better with what we learned in that specific tutorial. Completing these exercises will allow you to really understand the material and will enforce the concepts that were just presented.
 
+<span class="ccc">
 1. Research basic mac terminal and windows command prompt commands. This will help you navigate the terminal and make you more comfortable running code from the command line.
 2. Practice printing other phrases in Python! Maybe print, “My name is [your name]”
 3. Familiarize yourself with VS Code and all it has to offer. Knowing the IDE well will help you program better.

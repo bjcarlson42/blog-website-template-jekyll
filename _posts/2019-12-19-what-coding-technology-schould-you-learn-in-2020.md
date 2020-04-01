@@ -3,7 +3,6 @@ layout: post
 title: "What Coding Technology Should You Learn in 2020?"
 date: 2019-12-19
 categories: ['Programming','Technology','Web Development']
-tags: ['languages','html','css','js','databases','github','front end','back end']
 comments: true
 author: Benjamin Carlson
 description: When I first started programming, it was hard to decide what technologies, languages, and tools to learn. There were so many different technologies out there and finding the right
@@ -122,7 +121,7 @@ React is a similar to Angular in that it is a JavaScript library for building us
 
 Developed by Microsoft, this database management engine runs on cloud based servers as well as local servers. It is very fast and very stable and works well with other Microsoft based products such as .NET and C#. When used as an enterprise application, it can get pricey.
 
-### <span style="text-decoration: underline;">MySQL</span>
+### MySQL
 
 <span style="font-weight: 400;">A very popular database choice for web based applications. It is free, offers a lot of functionality, and updates are released regularly.</span>
 

@@ -329,10 +329,10 @@ a.left2:hover {
     color: rgba(0, 0, 0, 0.84);
 }
 
-.blog-post-container h3 {
-    font-size: 30px;
+.blog-post-container h4 {
+    font-size: 24px;
     margin-top: 1.95em;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: -0.28em;
     letter-spacing: -0.022em;
     line-height: 1.12;
@@ -342,7 +342,7 @@ a.left2:hover {
 
 .blog-post-container p {
     margin-top: 0.86em;
-    font-size: 21px;
+    font-size: 20px;
     margin-bottom: -0.46em;
     letter-spacing: -0.004em;
     line-height: 1.58;
@@ -350,7 +350,7 @@ a.left2:hover {
     word-wrap: break-word;
     font-style: normal;
     color: rgba(0, 0, 0, 0.84);
-    font-weight: 400;
+    font-weight: 350;
 }
 
 /* nav padding for blog-default.html */

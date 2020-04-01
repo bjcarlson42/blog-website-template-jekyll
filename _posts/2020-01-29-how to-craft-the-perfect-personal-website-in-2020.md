@@ -3,7 +3,6 @@ layout: post
 title: "How to Craft The Perfect Personal Website in 2020"
 date: "2020-02-16"
 categories: ['How To','Web Development']
-tags: ['personal website','personal branding','freelance']
 comments: true
 author: Benjamin Carlson
 description: New year, new personal website. Whether you are a developer, freelancer, photographer, designer, or something else, having an online presence is important
@@ -52,6 +51,7 @@ This is a great way to show potential employers that you are actually interested
 
 This should be one of the most important parts of your website. After all, if you are a freelancer or simply looking for a job, clients and employers need to know that you have done quality work in the past. There is no better way to show this to them by putting some actual examples of your best work on your website. Here are some guidelines I recommend following.
 
+<span class="ccc">
 1. **4 - 6 projects is ideal.** Don’t put every project you have ever done on your website. Clients don’t need to see everything you have done over your career. It’s just too much and chances are some of those projects aren’t that good. It is important to only show your best projects on your website.
 2. **Keep project description simple.** You don't need to write an essay about what each project is. Short and sweet is the way to go. For example, if you are a web designer and you have 4 websites you want to show in your projects section, maybe put a picture of it with a brief title and include a button where the client can view the website live. This is much better than including multiple screenshots of the website and a long summary of what it is.
 3. **Link to live project.** If the project is a website or something that the user can interact with, link to it! Letting the user actually use your product is a lot better than a description or even some pictures.
@@ -76,6 +76,7 @@ If you are selling a service this is an important section. It shows potential cl
 
 You need a way for potential clients or anyone else to send you a message. The easiest way to do this is to have a contact page or a section of your website dedicated for a contact section. A good way to go is to have a form that a user can fill out to easily send you a message. If you are a freelancer you might have the option for the customer to put their price range and/or project details. Here is a good example. Here are some important items to include in your contact section:
 
+<span class="ccc">
 1. Social media links
 2. Phones number
 3. Hours of operation (if applicable)
@@ -92,19 +93,21 @@ Update: I no longer use Siteground as my hosting service. I am now using GitHub 
 
 Another way to improve load time is in the code. Some technical tips to improve load time are:
 
+<span class="ccc">
 1.  Minify CSS and JS files (you can do this easily in Wordpress)
 2.  Write cleaner code
 3.  Use less CSS and JS files
-4.  **Optimize images**
+4.  Optimize images
 
 ## But I'm not a web Developer!
 
 If you don't have a coding background don't worry. There are many ways you can create a great personal website without writing a single line of code. You can...
 
+<span class="ccc">
 1.  Hire a freelancer (I freelance! Reach out and I'd love to build your new website!).
 2.  Use Wordpress and build it yourself.
 3.  Get a website template online, custimize it, and host it yourself
 
 ## Conclusion
 
-Well, that's it. If you include all of these parts in your personal website, I promise you will see results. Be sure to stay tuned for more posts!
+If you include all of these parts in your personal website, I promise you will see results. Be sure to stay tuned for more posts!
