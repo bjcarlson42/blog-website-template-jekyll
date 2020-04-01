@@ -76,8 +76,8 @@
     <div class="container">
         <p style="margin-top: 30px; font-size: 1.5em;">You Might Also Like:</p>
         <div class="row">
-            {% for category in site.categories limit:3 %}
-            {% for post in category[1] limit:3 %}
+            {% assign posts = site.posts | where_exp: "post", "post.categories contains page.categories[0]" %}
+            {% for post in posts limit:3 %}
             <div class="card" style="width: 22rem; margin: 0 auto; margin-bottom: 10px;" data-aos="fade-up">
                 <a href="{{ site.url }}{{ post.url }}">
                     <div class="card-img-top-container">
@@ -102,7 +102,6 @@
                         {{ post.date | date: '%B %d, %Y' }}</small>
                 </div>
             </div>
-            {% endfor %}
             {% endfor %}
         </div>
     </div>
