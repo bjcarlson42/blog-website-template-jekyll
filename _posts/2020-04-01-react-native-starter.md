@@ -17,6 +17,8 @@ alt: React Native
 
 React Native is a JavaScript framework for building cross platform mobile apps. In this tutorial I'll show you how to quickly set up a React Native project and run your app on your actual device! The code for this tutorial can be found on my [GitHub](https://github.com/bjcarlson42/blog-post-code/tree/master/Quickstart%20React%20Native/ExampleProject){:target="_blank"}.
 
+{% include under-p1-ad.html %}
+
 ## Expo
 
 In this tutorial, we will be using expo with React Native. Expo acts as a container around the React Native framework that allows us to develop applications more quickly and easily compared to if we were using bare bones React Native. The first thing we need to do is install the Expo CLI command line utility. Open your terminal and run the following command:
