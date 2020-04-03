@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create an IOS and Andriod app in under 5 minutes!"
+title: "Create an IOS and Android app in under 5 minutes!"
 date: 2020-04-01
 categories: ['React Native','App Development']
 tags: ['react','app development','ios','android','expo']
