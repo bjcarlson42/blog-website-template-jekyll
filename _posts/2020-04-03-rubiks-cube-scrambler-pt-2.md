@@ -13,13 +13,13 @@ alt: "Rubik's Cube Image"
 
 ## Introduction
 
-This is a follow up post to the post I wrote just the other day on scrambling a rubiks cube with JavaScript. If you haven't read that post yet be sure to check it out [here](https://benjamincarlson.net/javascript/tutorial/rubiks%20cube/2020/02/28/using-javascript-to-scramble-a-rubiks-cube.html){:target="_blank"} and then come back to this post. In this post, I will improve the JavaScript scrambler. To do that, we will unfortunatly have to rewrite most of the code, but the fundamental design stays the same. Let's get to it!
+This is a follow up post to the post I wrote just the other day on scrambling a Rubik's Cube with JavaScript. If you haven't read that post yet be sure to check it out [here](https://benjamincarlson.net/javascript/tutorial/rubiks%20cube/2020/02/28/using-javascript-to-scramble-a-rubiks-cube.html){:target="_blank"} and then come back to this post. In this post, I will improve the JavaScript scrambler. To do that, we will unfortunately have to rewrite most of the code, but the fundamental design stays the same. Let's get to it!
 
 {% include under-p1-ad.html %}
 
 ## What's a Scramble
 
-You should already know what a Rubik's cube scramble is (assuming you read the first post), however, here is a quick refesher just in case. A scramble is a sequence of 20 moves that are performed on a solved cube. These 20 moves are picked randomly from the following set of moves:
+You should already know what a Rubik's cube scramble is (assuming you read the first post), however, here is a quick refresher just in case. A scramble is a sequence of 20 moves that are performed on a solved cube. These 20 moves are picked randomly from the following set of moves:
 
 ```javascript
     F, R, U, B, L, D, F2, R2, U2, B2, L2, D2, F', R', U', B', L', D'
@@ -43,7 +43,7 @@ The problem with the last post was that our scrambling algorithm doesn't account
     L' R2 U2 F U' B' D2 B D B' F2 U R2 D D L2 B2 R2 L U'
 ```
 
-At first these scrambles might not look like an issue, however if you look closer, you will see that the first scramble has a L' and a L2 directly next to each other. The last scramble has two D moves next to each ther. This makes no sense. Take the last scramble for example. It's the one with two D moves next to each other. That is the same as saying D2. Essentially, that scramble is now 19 moves, not 20. This is a problem, especially when we get 3 or 4 moves like this in our scrambles 
+At first these scrambles might not look like an issue, however if you look closer, you will see that the first scramble has a L' and a L2 directly next to each other. The last scramble has two D moves next to each other. This makes no sense. Take the last scramble for example. It's the one with two D moves next to each other. That is the same as saying D2. Essentially, that scramble is now 19 moves, not 20. This is a problem, especially when we get 3 or 4 moves like this in our scrambles 
 
 Additionally, having a R followed by an R' makes no sense because they just cancel each other out! All we did was move the cube twice to get to the same spot. When this happens multiple times in a scramble, our scrambles could be 15 or less moves instead of 20! 
 
@@ -61,13 +61,13 @@ We can use numbers to represent the scramble. We will assign F to 0, B to 1, and
 
 ## Coding the Solution in JavaScript
 
-We can now approach this problem using this knowledge. Let's start off by giving each of the 6 possibilities a number 0 through 6 and store them in an arrray. We will call this array numOptions.
+We can now approach this problem using this knowledge. Let's start off by giving each of the 6 possibilities a number 0 through 6 and store them in an array. We will call this array numOptions.
 
 ```javascript
     var numOptions = [0,1,2,3,4,5]
 ```
 
-Now, we can randomly add these numbers to another array nammed scramble untill we have 20 random letters in the array. Remember, a Rubik's cube scramble is 20 moves. 
+Now, we can randomly add these numbers to another array named scramble until we have 20 random letters in the array. Remember, a Rubik's cube scramble is 20 moves. 
 
 ```javascript
     var scramble = [] // initialize to empty
